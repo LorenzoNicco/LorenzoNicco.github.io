@@ -1,13 +1,16 @@
 <script>
+    import JumboSection from "../components/JumboSection.vue";
+
     export default {
-        name: "AppHome"
+        name: "AppHome",
+        components: {
+            JumboSection
+        }
     }
 </script>
 
 <template>
-    <section>
-        <h1 class="mt-5 mb-3 text-center">Homepage</h1>
-    </section>
+    <JumboSection />
 </template>
 
 <style lang="scss" scoped>

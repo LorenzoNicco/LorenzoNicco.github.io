@@ -5,18 +5,19 @@
 </script>
 
 <template>
+    <!-- Header --------------------------------------------------------------------------->
     <header>
-        <div class="container">
+        <nav class="container">
             <div class="row">
                 <div class="col text-center">
                     TEST
                 </div>
     
-                <nav class="col text-center">
+                <div class="col text-center">
                     TEST
-                </nav>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
 </template>
 
