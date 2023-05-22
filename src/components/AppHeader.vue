@@ -1,12 +1,12 @@
 <script>
     export default {
-        name: "AppHome"
+        name: "AppHeader"
     }
 </script>
 
 <template>
     <section>
-        <h1 class="mt-5 mb-3 text-center">Homepage</h1>
+        <h1 class="mt-5 mb-3">Header</h1>
     </section>
 </template>
 
