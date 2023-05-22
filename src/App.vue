@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <AppHeader class="w-100" />
+  <AppHeader />
 
   <router-view></router-view>
 </template>

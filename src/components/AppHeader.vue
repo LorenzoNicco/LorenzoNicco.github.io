@@ -9,11 +9,11 @@
     <header>
         <nav class="container">
             <div class="row">
-                <div class="col text-center">
+                <div class="col text-start">
                     TEST
                 </div>
     
-                <div class="col text-center">
+                <div class="col text-end">
                     TEST
                 </div>
             </div>
@@ -25,5 +25,6 @@
     header {
         background-color: rgba(255, 255, 255, 0.5);
         filter: blur(1);
+        width: 100%;
     }
 </style>
