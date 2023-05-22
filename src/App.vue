@@ -12,7 +12,7 @@ export default {
   <button @click="count++">Count is: {{ count }}</button>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 button {
   font-weight: bold;
 }
