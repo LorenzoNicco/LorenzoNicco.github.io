@@ -13,12 +13,11 @@ export default {
 </script>
 
 <template>
-  <AppHeader />
+  <AppHeader class="w-100" />
+
   <router-view></router-view>
 </template>
 
 <style lang="scss" scoped>
-button {
-  font-weight: bold;
-}
+
 </style>
