@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <section id="presentation" class="container">
+    <section id="presentation" class="container py-5">
         <div class="row">
             <div class="col-8">
                 <h2>Hello World!</h2>
