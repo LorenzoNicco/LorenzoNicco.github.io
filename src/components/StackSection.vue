@@ -47,7 +47,7 @@
 </script>
 
 <template>
-    <section id="stack" class="container py-5">
+    <section id="stack" class="container my-section-padding">
         <div class="row justify-content-center">
             <h2 class="col-12 text-center mb-5">Technologies I use</h2>
 

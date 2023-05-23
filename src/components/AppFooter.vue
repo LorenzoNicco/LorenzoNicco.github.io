@@ -20,7 +20,7 @@
 
                 <hr class="text-secondary">
 
-                <p class="text-light text-center">Feel free to contact me, I can't wait to work together on some fantastic projects!</p>
+                <p class="text-light text-center">Feel free to contact me, I can't wait to work with you on some fantastic projects!</p>
             </div>
         </section>
     </footer>

@@ -4,3 +4,22 @@
 body {
     scroll-behavior: smooth;
 }
+
+.my-section-padding {
+    padding: 100px 12px;
+}
+
+.my-button {
+    width: fit-content;
+    padding: 0.7rem 2rem;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-color: orange;
+    transition: 0.2s ease-in;
+}
+
+.my-button:hover {
+    border: 2px solid orange;
+    color: orange;
+    background-color: transparent;
+}

@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <section id="projects" class="container py-5">
+    <section id="projects" class="container my-section-padding">
         <div class="row">
             <div class="col-12">
                 <h2 class="text-center mb-5">My projects</h2>
@@ -20,7 +20,7 @@
 
                         <p>Home page for a film making company.</p>
                         
-                        <button class="btn btn-primary">More Info</button>
+                        <button class="my-button">More Info</button>
                     </div>
                 </div>
             </div>

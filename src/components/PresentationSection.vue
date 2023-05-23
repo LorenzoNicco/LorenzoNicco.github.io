@@ -5,15 +5,21 @@
 </script>
 
 <template>
-    <section id="presentation" class="container py-5">
+    <section id="presentation" class="container my-section-padding">
         <div class="row">
             <div class="col-8">
-                <h2>Hello World!</h2>
+                <h2 class="mb-4">Hello World!</h2>
 
-                <p>My name is Lorenzo, and I am a <strong>Junior Full Stack Web Developer</strong>.</p>
+                <p class="fs-5">My name is Lorenzo, and I am a <strong>Junior Full Stack Web Developer</strong>.</p>
+
+                <hr>
+
+                <p>I build web pages and solve problems for passion and for work. As Web Developer I put extreme attention to the details and I continuously try to learn new languages and tools.</p>
+            
+                <button class="my-button mt-3">More on me!</button>
             </div>
 
-            <div class="col-4">
+            <div class="col-4 d-flex justify-content-center align-items-center">
                 <div class="img-debug"></div>
             </div>
         </div>

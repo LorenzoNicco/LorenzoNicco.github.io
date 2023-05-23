@@ -8,7 +8,7 @@
     <!-- Jumbotron --------------------------------------------------------------------------->
     <section id="jumbotron" class="container">
         <div class="row">
-            <h1 class="col-4 py-5">
+            <h1 class="col-4 my-section-padding">
                 I make things for the Internet
             </h1>
         </div>
