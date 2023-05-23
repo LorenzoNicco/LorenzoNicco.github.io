@@ -1,6 +1,48 @@
 <script>
     export default {
-        name: "StackSection"
+        name: "StackSection",
+        data() {
+            return {
+                stack: [
+                    {
+                        title: "Html"
+                    },
+                    {
+                        title: "Css"
+                    },
+                    {
+                        title: "Bootstrap"
+                    },
+                    {
+                        title: "Javascript"
+                    },
+                    {
+                        title: "VueJs"
+                    },
+                    {
+                        title: "NodeJs"
+                    },
+                    {
+                        title: "Php"
+                    },
+                    {
+                        title: "MySql"
+                    },
+                    {
+                        title: "Laravel"
+                    },
+                    {
+                        title: "Git"
+                    },
+                    {
+                        title: "Sass"
+                    },
+                    {
+                        title: "Photoshop"
+                    },
+                ]
+            }
+        }
     }
 </script>
 
@@ -11,17 +53,7 @@
 
             <div class="col-8">
                 <div class="row flex-wrap">
-                    <div class="col-4">Html</div>
-
-                    <div class="col-4">Css</div>
-
-                    <div class="col-4">Javascript</div>
-
-                    <div class="col-4">Bootstrap</div>
-
-                    <div class="col-4">Vue</div>
-
-                    <div class="col-4">Php</div>
+                    <div v-for="item in stack" class="col-4 text-center mb-3">{{ item.title }}</div>
                 </div>
             </div>
         </div>

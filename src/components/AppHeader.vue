@@ -6,7 +6,8 @@
                 menu: [
                     "presentation",
                     "stack",
-                    "projects"
+                    "projects",
+                    "contacts"
                 ]
             }
         }
