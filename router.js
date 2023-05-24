@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import AppHome from './src/pages/AppHome.vue';
+import AppBio from './src/pages/AppBio.vue';
 const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -7,6 +8,11 @@ const router = createRouter({
             path: '/',
             name: 'home',
             component: AppHome
+        },
+        {
+            path: '/bio',
+            name: 'bio',
+            component: AppBio
         },
     ]
 });

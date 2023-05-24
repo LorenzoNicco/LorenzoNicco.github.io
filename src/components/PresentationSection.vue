@@ -16,7 +16,7 @@
 
                 <p>I build web pages and solve problems for passion and for work. As Web Developer I put extreme attention to the details and I continuously try to learn new languages and tools.</p>
             
-                <button class="my-button mt-3">More on me!</button>
+                <router-link class="my-button" :to="{ name: 'bio'}">More on me!</router-link>
             </div>
 
             <div class="col-4 d-flex justify-content-center align-items-center">
