@@ -16,13 +16,15 @@
 </script>
 
 <template>
-    <JumboSection />
-
-    <PresentationSection />
-
-    <StackSection />
-
-    <ProjectsSection />
+    <main>
+        <JumboSection />
+    
+        <PresentationSection />
+    
+        <StackSection />
+    
+        <ProjectsSection />
+    </main>
 </template>
 
 <style lang="scss" scoped>
