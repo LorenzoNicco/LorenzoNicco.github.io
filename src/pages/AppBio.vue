@@ -1,12 +1,16 @@
 <script>
+    import RoadmapSection from "../components/RoadmapSection.vue";
     export default {
         name: "AppBio",
+        components: {
+            RoadmapSection
+        }
     }
 </script>
 
 <template>
     <main>
-        <h1 class="text-center my-section-padding">Questo sono io</h1>
+        <h1 class="text-center my-section-padding">Questo sono io 👋</h1>
 
         <div class="d-flex justify-content-center align-items-center">
             <div class="img-debug"></div>
@@ -30,6 +34,8 @@
                 </p>
             </div>
         </section>
+
+        <RoadmapSection />
     </main>
 </template>
 
