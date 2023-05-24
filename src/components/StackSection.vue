@@ -49,7 +49,7 @@
 <template>
     <section id="stack" class="container my-section-padding">
         <div class="row justify-content-center">
-            <h2 class="col-12 text-center mb-5">Technologies I use</h2>
+            <h2 class="col-12 text-center mb-5">Le tecnologie che uso</h2>
 
             <div class="col-8">
                 <div class="row flex-wrap">

@@ -8,7 +8,7 @@
     <footer>
         <section id="contacts" class="container">
             <div class="row">
-                <h4 class="col-12 text-center text-light">My contacts</h4>
+                <h4 class="col-12 text-center text-light">I miei contatti</h4>
 
                 <div class="col-4 offset-4 d-flex justify-content-between my-3">
                     <font-awesome-icon class="social-icons" icon="fa-brands fa-github" />
@@ -20,7 +20,7 @@
 
                 <hr class="text-secondary">
 
-                <p class="text-light text-center">Feel free to contact me, I can't wait to work with you on some fantastic projects!</p>
+                <p class="text-light text-center">Contattami liberamente, non vedo l'ora di lavorare insieme su qualche nuovo progetto!</p>
             </div>
         </section>
     </footer>

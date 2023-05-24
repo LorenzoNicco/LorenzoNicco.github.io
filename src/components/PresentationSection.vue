@@ -10,13 +10,13 @@
             <div class="col-8">
                 <h2 class="mb-4">Hello World!</h2>
 
-                <p class="fs-5">My name is Lorenzo, and I am a <strong>Junior Full Stack Web Developer</strong>.</p>
+                <p class="fs-5">Mi chiamo Lorenzo e sono un <strong>Junior Full Stack Web Developer</strong>.</p>
 
                 <hr>
 
-                <p>I build web pages and solve problems for passion and for work. As Web Developer I put extreme attention to the details and I continuously try to learn new languages and tools.</p>
+                <p>Da amante di costruzioni ed enigmi, costruisco pagine e risolvo problemi su Internet per passione e per lavoro. Come Web Developer dedico estrema attenzione ai dettagli e cerco continuamente di imparare nuovi linguaggi e strumenti.</p>
             
-                <router-link class="my-button" :to="{ name: 'bio'}">More on me!</router-link>
+                <router-link class="my-button" :to="{ name: 'bio'}">Scopri di più!</router-link>
             </div>
 
             <div class="col-4 d-flex justify-content-center align-items-center">

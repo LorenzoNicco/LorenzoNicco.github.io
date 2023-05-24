@@ -8,7 +8,7 @@
     <section id="projects" class="container my-section-padding">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-center mb-5">My projects</h2>
+                <h2 class="text-center mb-5">I miei progetti</h2>
 
                 <div class="row">
                     <div class="col-5 text-center">
@@ -18,9 +18,9 @@
                     <div class="col-7 d-flex flex-column justify-content-center align-items-start">
                         <h3>Cinemato</h3>
 
-                        <p>Home page for a film making company.</p>
+                        <p>Home page per un'azienda di produzione video.</p>
                         
-                        <button class="my-button">More Info</button>
+                        <button class="my-button">Esplora</button>
                     </div>
                 </div>
             </div>
