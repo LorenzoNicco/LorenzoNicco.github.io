@@ -52,7 +52,14 @@
             cursor: pointer;
             text-align: center;
             padding: 0 1rem;
+            transition: 0.2s ease-in;
         }
+
+
+        .company-name:hover {
+            color: orange;
+        }
+
         .vertical-line {
             width: 10px;
             height: 30px;
