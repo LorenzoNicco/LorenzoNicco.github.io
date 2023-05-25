@@ -10,14 +10,6 @@
                 data: {
                     experiences: [
                         {
-                            id: 'Boolean-experience',
-                            company: 'Boolean',
-                            title: 'Jr Full Stack Web Developer Trainee',
-                            location: 'Remote',
-                            duration: 'Novembre 2022 - Maggio 2023',
-                            description: 'Corso teorico/pratico della durata di 6 mesi, durante il quale mi sono cimentato nella realizzazione di progetti ispirati a siti e web app realmente esistenti (ad esempio: WatsApp web, Spotify e Dropbox). I progetti realizzati durante il corso presentavano una difficoltà sempre crescente e delle scadenze variabili.'
-                        },
-                        {
                             id: 'The-Focus',
                             company: 'The Focus',
                             title: '3D DMP Trainee',
@@ -25,23 +17,23 @@
                             duration: 'Settembre 2021 - Novembre 2021',
                             description: 'Corso teorico/pratico di 2 mesi durante il quale ho realizzato vari progetti di matte painting in 2d e 3d. Per la realizzazione di questi ho sfruttato i programmi Photoshop, Maya e Nuke'
                         },
+                        {
+                            id: 'Boolean-experience',
+                            company: 'Boolean',
+                            title: 'Jr Full Stack Web Developer Trainee',
+                            location: 'Remote',
+                            duration: 'Novembre 2022 - Maggio 2023',
+                            description: 'Corso teorico/pratico della durata di 6 mesi, durante il quale mi sono cimentato nella realizzazione di progetti ispirati a siti e web app realmente esistenti (ad esempio: WatsApp web, Spotify e Dropbox). I progetti realizzati durante il corso presentavano una difficoltà sempre crescente e delle scadenze variabili.'
+                        },
                     ],
                     education: [
                         {
-                            id: 'Boolean-education',
-                            company: 'Boolean',
-                            title: 'Master in Web Development',
-                            location: 'Remoto',
-                            duration: 'Novembre 2022 - Maggio 2023',
-                            description: 'Percorso di studi intensivo di 700 ore, finalizzato all\'apprendimento degli strumenti necessari allo sviluppo di siti e applicazioni web.'
-                        },
-                        {
-                            id: 'CG-Spectrum-diploma',
-                            company: 'CG Spectrum - College of Digital Art and Animation',
-                            title: 'Advanced Concept Art',
-                            location: 'Remoto',
-                            duration: 'Novembre 2022 - Maggio 2023', //correggere
-                            description: 'Percorso di studi intensivo di 700 ore, finalizzato all\'apprendimento degli strumenti necessari allo sviluppo di siti e applicazioni web.' //correggere
+                            id: 'Liceo-Petrocchi',
+                            company: 'Liceo Artistico P. Petrocchi',
+                            title: 'Diploma in Architettura e Arredamento',
+                            location: 'Pistoia',
+                            duration: '2005 - 2011',
+                            description: 'Diploma di maturità ottenuta nell\'indirizzo di studi di Architettura e Arredamento' //correggere
                         },
                         {
                             id: 'CG-Spectrum-certificate',
@@ -52,12 +44,20 @@
                             description: 'Percorso di studi intensivo di 700 ore, finalizzato all\'apprendimento degli strumenti necessari allo sviluppo di siti e applicazioni web.' //correggere
                         },
                         {
-                            id: 'Liceo-Petrocchi',
-                            company: 'Liceo Artistico P. Petrocchi',
-                            title: 'Diploma in Architettura e Arredamento',
-                            location: 'Pistoia',
-                            duration: '2005 - 2011',
-                            description: 'Diploma di maturità ottenuta nell\'indirizzo di studi di Architettura e Arredamento' //correggere
+                            id: 'CG-Spectrum-diploma',
+                            company: 'CG Spectrum - College of Digital Art and Animation',
+                            title: 'Advanced Concept Art',
+                            location: 'Remoto',
+                            duration: 'Novembre 2022 - Maggio 2023', //correggere
+                            description: 'Percorso di studi intensivo di 700 ore, finalizzato all\'apprendimento degli strumenti necessari allo sviluppo di siti e applicazioni web.' //correggere
+                        },
+                        {
+                            id: 'Boolean-education',
+                            company: 'Boolean',
+                            title: 'Master in Web Development',
+                            location: 'Remoto',
+                            duration: 'Novembre 2022 - Maggio 2023',
+                            description: 'Percorso di studi intensivo di 700 ore, finalizzato all\'apprendimento degli strumenti necessari allo sviluppo di siti e applicazioni web.'
                         },
                     ]
                 }
@@ -94,18 +94,18 @@
         </section>
 
         <section id="experiences" class="container my-section-padding">
-            <div class="row">
+            <div class="row g-0">
                 <h2 class="col-12 text-center mb-5">Le mie esperienze fin'ora</h2>
-        
+
                 <RoadmapSection
-                v-for="data in data.experiences"
-                :data="data"
+                 v-for="data in data.experiences"
+                 :data="data"
                 />
             </div>
         </section>
 
         <section id="education" class="container my-section-padding">
-            <div class="row">
+            <div class="row g-0">
                 <h2 class="col-12 text-center mb-5">Dove ho studiato</h2>
         
                 <RoadmapSection
