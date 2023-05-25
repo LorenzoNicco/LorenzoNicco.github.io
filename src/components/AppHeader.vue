@@ -3,14 +3,25 @@
         name: "AppHeader",
         data() {
             return {
-                menu: [
+                menuHome: [
                     "presentation",
                     "stack",
                     "projects",
                     "contacts"
+                ],
+                menuBio: [
+                    "bio",
+                    "experiences",
+                    "education",
+                    "contacts"
                 ]
             }
-        }
+        },
+        computed: {
+            currentRouteName() {
+                return this.$route.path;
+            }
+        },
     }
 </script>
 
@@ -23,8 +34,13 @@
                     TEST
                 </div>
     
-                <ul class="col list-unstyled d-flex justify-content-between">
-                    <li v-for="item in menu">
+                <ul v-if="currentRouteName == '/'" class="col list-unstyled d-flex justify-content-between">
+                    <li v-for="item in menuHome">
+                        <a class="text-decoration-none" :href="'#'+item">{{ item }}</a>
+                    </li>
+                </ul>
+                <ul v-else-if="currentRouteName == '/bio'" class="col list-unstyled d-flex justify-content-between">
+                    <li v-for="item in menuBio">
                         <a class="text-decoration-none" :href="'#'+item">{{ item }}</a>
                     </li>
                 </ul>
