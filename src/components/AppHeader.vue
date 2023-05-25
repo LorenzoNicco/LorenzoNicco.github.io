@@ -4,16 +4,48 @@
         data() {
             return {
                 menuHome: [
-                    "presentation",
-                    "stack",
-                    "projects",
-                    "contacts"
+                    {
+                        id: "presentation",
+                        eng: "Presentation",
+                        ita: "Presentazione"
+                    },
+                    {
+                        id: "stack",
+                        eng: "Technologies",
+                        ita: "Strumenti"
+                    },
+                    {
+                        id: "projects",
+                        eng: "Projects",
+                        ita: "Progetti"
+                    },
+                    {
+                        id: "contacts",
+                        eng: "Contacts",
+                        ita: "Contatti"
+                    },
                 ],
                 menuBio: [
-                    "bio",
-                    "experiences",
-                    "education",
-                    "contacts"
+                    {
+                        id: "bio",
+                        eng: "Bio",
+                        ita: "Chi sono"
+                    },
+                    {
+                        id: "experiences",
+                        eng: "Experiences",
+                        ita: "Esperienze"
+                    },
+                    {
+                        id: "education",
+                        eng: "Education",
+                        ita: "Istruzione"
+                    },
+                    {
+                        id: "contacts",
+                        eng: "Contacts",
+                        ita: "Contatti"
+                    },
                 ]
             }
         },
@@ -36,12 +68,12 @@
     
                 <ul v-if="currentRouteName == '/'" class="col list-unstyled d-flex justify-content-between">
                     <li v-for="item in menuHome">
-                        <a class="text-decoration-none" :href="'#'+item">{{ item }}</a>
+                        <a class="text-decoration-none" :href="'#'+item.id">{{ item.ita }}</a>
                     </li>
                 </ul>
                 <ul v-else-if="currentRouteName == '/bio'" class="col list-unstyled d-flex justify-content-between">
                     <li v-for="item in menuBio">
-                        <a class="text-decoration-none" :href="'#'+item">{{ item }}</a>
+                        <a class="text-decoration-none" :href="'#'+item.id">{{ item.ita }}</a>
                     </li>
                 </ul>
             </div>
