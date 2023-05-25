@@ -17,8 +17,8 @@ import { store } from "../store.js"
                 <h2 class="text-center mb-5">I miei progetti</h2>
 
                 <div class="row">
-                    <div class="col-12">
-                        <div v-for="item in store.projects" class="project-container row rounded-pill py-3">
+                    <div v-for="item in store.projects" class="project-external col-12 rounded-pill mb-3">
+                        <div class="project-container row rounded-pill py-3">
                             <div class="col-5 text-center d-flex justify-content-center align-items-center">
                                 <img :src="item.pic" alt="Image not found">
                             </div>
@@ -43,30 +43,36 @@ import { store } from "../store.js"
         width: 60%;
     }
 
-    .project-container {
-        background-color: white;
+    .project-external {
+        z-index: 1;
         border: 3px solid orange;
-        position: relative;
-        overflow: hidden;
-        box-shadow: inset -4px 8px 15px -11px #000000;
-    }
-
-    .project-container::before {
-        position: absolute;
-        content: 'Show';
-        z-index: 2;
-        height: 100%;
-        left: -35%;
-        top: 0;
-        transform:skew(45deg);
-        transition-duration: 0.5s;
-        transform-origin: top left;
-        width: 135%;
-        background-color: cadetblue;
-    }
-
-    .project-container:hover::before {
-        height: 100%;
-        width: 0;
+        .project-container {
+            background-color: cadetblue;
+            border: 2px solid rgb(44, 44, 44);
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset -4px 8px 15px -11px #000000;
+            z-index: 10;
+            color: white;
+        }
+    
+        .project-container::before {
+            position: absolute;
+            content: 'Show';
+            z-index: 20;
+            height: 100%;
+            left: -35%;
+            top: 0;
+            transform:skew(45deg);
+            transition-duration: 0.5s;
+            transform-origin: top left;
+            width: 135%;
+            background-color: rgb(255, 200, 99);
+        }
+    
+        .project-container:hover::before {
+            height: 100%;
+            width: 0;
+        }
     }
 </style>
