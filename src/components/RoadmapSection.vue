@@ -43,14 +43,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- <h5>{{ data.title }}</h5>
-
-        <p>{{ data.location }}</p>
-
-        <p>{{ data.duration }}</p>
-
-        <p>{{ data.description }}</p> -->
     </div>
 </template>
 

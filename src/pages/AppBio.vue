@@ -95,7 +95,11 @@
 
         <section id="experiences" class="container my-section-padding">
             <div class="row g-0">
-                <h2 class="col-12 text-center mb-5">Le mie esperienze fin'ora</h2>
+                <div class="col-12 mb-5">
+                    <h2 class="text-center mb-3">Le mie esperienze fin'ora</h2>
+    
+                    <p class="text-center w-75 m-auto">Queste sono le esperienze più significative che ho affrontato durante il mio percorso. Durante queste fasi della mia vita ho potuto sviluppare e affinare le abilità di cui dispongo, rimanendo all'interno di un contesto lavorativo o simile.</p>
+                </div>
 
                 <RoadmapSection
                  v-for="data in data.experiences"
@@ -106,7 +110,11 @@
 
         <section id="education" class="container my-section-padding">
             <div class="row g-0">
-                <h2 class="col-12 text-center mb-5">Dove ho studiato</h2>
+                <div class="col-12 mb-5">
+                    <h2 class="text-center mb-3">Dove ho studiato</h2>
+
+                    <p class="text-center w-75 m-auto">I miei studi sono iniziati nel campo dell'arte, per poi spostarsi sempre di più verso l'area digitale ed informatica. Durante questi periodi ho appreso l'uso di vari strumenti e tecnologie che tutt'ora mi sono utili per il mio lavoro. Ma, soprattutto, ho potuto formare il mio modo di pensare in vari ambiti, facendo tesoro delle parti migliori di ognuno di essi.</p>
+                </div>
         
                 <RoadmapSection
                 v-for="data in data.education"
@@ -114,6 +122,8 @@
                 />
             </div>
         </section>
+
+        <router-link class="my-button m-auto mb-5" :to="{ name: 'home'}">Torna alla home</router-link>
     </main>
 </template>
 
