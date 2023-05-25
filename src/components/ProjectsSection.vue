@@ -1,9 +1,10 @@
 <script>
+import { store } from "../store.js"
     export default {
         name: "ProjectsSection",
         data() {
             return {
-                
+                store,
             }
         }
     }
@@ -17,15 +18,15 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <div class="project-container row rounded-pill py-3">
+                        <div v-for="item in store.projects" class="project-container row rounded-pill py-3">
                             <div class="col-5 text-center d-flex justify-content-center align-items-center">
-                                <img src="../assets/registrazioni/Cinemato.JPG" alt="Image not found">
+                                <img :src="item.pic" alt="Image not found">
                             </div>
         
                             <div class="col-7 d-flex flex-column justify-content-center align-items-start">
-                                <h3>Cinemato</h3>
+                                <h3>{{ item.title }}</h3>
         
-                                <p>Home page per un'azienda di produzione video.</p>
+                                <p>{{ item.shortDescription }}</p>
                                 
                                 <button class="my-button">Esplora</button>
                             </div>
