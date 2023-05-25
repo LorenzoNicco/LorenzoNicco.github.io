@@ -83,7 +83,7 @@
 
 <style lang="scss" scoped>
     header {
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: white;
         filter: blur(1);
         width: 100%;
         position: fixed;
@@ -91,5 +91,6 @@
         left: 0;
         right: 0;
         padding: 2rem 0;
+        z-index: 100;
     }
 </style>
