@@ -27,15 +27,27 @@
                         <h2 class="modal-title fs-3" id="exampleModalLabel">{{ data.title }}</h2>
                     </div>
 
-                    <div class="modal-body">
-                        <h5>🏢 {{ data.company }}</h5>
+                    <ul class="modal-body list-unstyled ms-5 ps-1">
+                        <li>
+                            <span class="fa-li"><font-awesome-icon icon="fa-solid fa-building" /></span>
+                            <h5>{{ data.company }}</h5>
+                        </li>
 
-                        <p>🗺 {{ data.location }}</p>
+                        <li>
+                            <span class="fa-li"><font-awesome-icon icon="fa-solid fa-map-location-dot" /></span>
+                            <p>{{ data.location }}</p>
+                        </li>
 
-                        <p>⏳ {{ data.duration }}</p>
+                        <li>
+                            <span class="fa-li"><font-awesome-icon icon="fa-regular fa-hourglass-half" /></span>
+                            <p>{{ data.duration }}</p>
+                        </li>
 
-                        <p>❔ {{ data.description }}</p>
-                    </div>
+                        <li>
+                            <span class="fa-li"><font-awesome-icon icon="fa-solid fa-circle-question" /></span>
+                            <p>{{ data.description }}</p>
+                        </li>
+                    </ul>
 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
