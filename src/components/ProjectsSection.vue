@@ -28,7 +28,7 @@ import { store } from "../store.js"
         
                                 <p>{{ item.shortDescription }}</p>
                                 
-                                <button class="my-button">Esplora</button>
+                                <router-link :to="{ name: 'single-project', params: { slug: item.slug } }" class="my-button">Esplora</router-link>
                             </div>
                         </div>
                     </div>
@@ -67,6 +67,7 @@ import { store } from "../store.js"
             transform-origin: top left;
             width: 135%;
             background-color: rgb(255, 200, 99);
+            border: 2px solid rgb(61, 61, 61);
         }
     
         .project-container:hover::before {
