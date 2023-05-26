@@ -51,7 +51,7 @@
                     </div>
                 </div>
 
-                <video class="col-12 w-75" :src="project.video" controls></video>
+                <video class="col-12 w-75" :src="project.video" controls muted></video>
             </div>
         </section>
 
