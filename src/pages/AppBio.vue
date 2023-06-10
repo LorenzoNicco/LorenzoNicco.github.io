@@ -25,6 +25,14 @@
                             duration: 'Novembre 2022 - Maggio 2023',
                             description: 'Corso teorico/pratico della durata di 6 mesi, durante il quale mi sono cimentato nella realizzazione di progetti ispirati a siti e web app realmente esistenti (ad esempio: WatsApp web, Spotify e Dropbox). I progetti realizzati durante il corso presentavano una difficoltà sempre crescente e delle scadenze variabili.'
                         },
+                        {
+                            id: 'Promos-web-22',
+                            company: 'Promos Web 22',
+                            title: 'Sviluppatore web',
+                            location: 'Pieve a Nievole (PT)',
+                            duration: 'Maggio 2023 - Presente',
+                            description: 'Sviluppo e manutenzione dei siti web e gestionali dei clienti.'
+                        },
                     ],
                     education: [
                         {

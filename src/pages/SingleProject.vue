@@ -43,11 +43,15 @@
                     </div>
                 </div>
 
-                <div class="col-12 my-project-mb">
+                <div class="stack col-12 my-project-mb">
                     <h2 class="text-center my-4">Linguaggi e Frameworks utilizzati</h2>
 
                     <div class="row flex-wrap justify-content-center">
-                        <div v-for="item in project.technologies" class="col-2 text-center">{{ item.name }}</div>
+                        <div v-for="item in project.technologies" class="col-2 text-center">
+                            <p>{{ item.name }}</p>
+
+                            <img :src="item.icon" alt="Immagine non disponibile">
+                        </div>
                     </div>
                 </div>
 
@@ -62,5 +66,16 @@
 <style lang="scss" scoped>
     section {
         margin-top: 104px;
+
+        .stack {
+            p {
+                font-weight: bold;
+                color: orange;
+            }
+    
+            img {
+                height: 70px;
+            }
+        }
     }
 </style>

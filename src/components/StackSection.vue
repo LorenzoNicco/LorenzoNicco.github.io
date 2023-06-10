@@ -5,40 +5,56 @@
             return {
                 stack: [
                     {
-                        title: "Html"
+                        title: "Html",
+                        icon: "/icons/html5.svg"
                     },
                     {
-                        title: "Css"
+                        title: "Css",
+                        icon: "/icons/css3.svg"
                     },
                     {
-                        title: "Bootstrap"
+                        title: "Bootstrap",
+                        icon: "/icons/bootstrap.svg"
                     },
                     {
-                        title: "Javascript"
+                        title: "Javascript",
+                        icon: "/icons/javascript.svg"
                     },
                     {
-                        title: "VueJs"
+                        title: "VueJs",
+                        icon: "/icons/vuedotjs.svg"
                     },
                     {
-                        title: "NodeJs"
+                        title: "Vite",
+                        icon: "/icons/vite.svg"
                     },
                     {
-                        title: "Php"
+                        title: "NodeJs",
+                        icon: "/icons/nodedotjs.svg"
                     },
                     {
-                        title: "MySql"
+                        title: "Php",
+                        icon: "/icons/php.svg"
                     },
                     {
-                        title: "Laravel"
+                        title: "MySql",
+                        icon: "/icons/mysql.svg"
                     },
                     {
-                        title: "Git"
+                        title: "Laravel",
+                        icon: "/icons/laravel.svg"
                     },
                     {
-                        title: "Sass"
+                        title: "Git",
+                        icon: "/icons/git.svg"
                     },
                     {
-                        title: "Photoshop"
+                        title: "Sass",
+                        icon: "/icons/sass.svg"
+                    },
+                    {
+                        title: "Photoshop",
+                        icon: "/icons/adobephotoshop.svg"
                     },
                 ]
             }
@@ -53,7 +69,11 @@
 
             <div class="col-8">
                 <div class="row flex-wrap">
-                    <div v-for="item in stack" class="col-4 text-center mb-3">{{ item.title }}</div>
+                    <div v-for="item in stack" class="col-2 text-center mb-5">
+                        <p>{{ item.title }}</p>
+
+                        <img :src="item.icon" alt="Immagine non disponibile">
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,5 +81,12 @@
 </template>
 
 <style lang="scss" scoped>
+    p {
+        font-weight: bold;
+        color: orange;
+    }
 
+    img {
+        height: 70px;
+    }
 </style>

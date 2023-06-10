@@ -10,23 +10,23 @@ export const store = reactive ({
             video: "./registrazioni/Deliveboo.mp4",
             technologies: [
                 {
-                    icon: '',
+                    icon: '/public/icons/vuedotjs.svg',
                     name: "VueJs"
                 },
                 {
-                    icon: '',
+                    icon: '/public/icons/nodedotjs.svg',
                     name: "NodeJs"
                 },
                 {
-                    icon: '',
+                    icon: '/public/icons/vite.svg',
                     name: "Vite"
                 },
                 {
-                    icon: '',
+                    icon: '/public/icons/bootstrap.svg',
                     name: "Bootstrap"
                 },
                 {
-                    icon: '',
+                    icon: '/public/icons/laravel.svg',
                     name: "Laravel"
                 },
             ]
@@ -39,19 +39,19 @@ export const store = reactive ({
             video: "./registrazioni/Cinemato.mkv",
             technologies: [
                 {
-                    icon: '',
+                    icon: '/public/icons/vuedotjs.svg',
                     name: "VueJs"
                 },
                 {
-                    icon: '',
+                    icon: '/public/icons/nodedotjs.svg',
                     name: "NodeJs"
                 },
                 {
-                    icon: '',
+                    icon: '/public/icons/vite.svg',
                     name: "Vite"
                 },
                 {
-                    icon: '',
+                    icon: '/public/icons/sass.svg',
                     name: "Sass"
                 },
             ]
@@ -64,19 +64,19 @@ export const store = reactive ({
             video: "./registrazioni/Boolflix.mp4",
             technologies: [
                 {
-                    icon: '',
+                    icon: '/public/icons/vuedotjs.svg',
                     name: "VueJs"
                 },
                 {
-                    icon: '',
+                    icon: '/public/icons/nodedotjs.svg',
                     name: "NodeJs"
                 },
                 {
-                    icon: '',
+                    icon: '/public/icons/vite.svg',
                     name: "Vite"
                 },
                 {
-                    icon: '',
+                    icon: '/public/icons/sass.svg',
                     name: "Sass"
                 },
             ]
@@ -89,15 +89,15 @@ export const store = reactive ({
             video: "./registrazioni/BoolzApp.mp4",
             technologies: [
                 {
-                    icon: '',
+                    icon: '/public/icons/vuedotjs.svg',
                     name: "VueJs"
                 },
                 {
-                    icon: '',
+                    icon: '/public/icons/html5.svg',
                     name: "Html"
                 },
                 {
-                    icon: '',
+                    icon: '/public/icons/css3.svg',
                     name: "Css"
                 },
             ]
@@ -110,11 +110,11 @@ export const store = reactive ({
             video: "./registrazioni/SpotifyWeb-replica.mp4",
             technologies: [
                 {
-                    icon: '',
+                    icon: '/public/icons/html5.svg',
                     name: "Html"
                 },
                 {
-                    icon: '',
+                    icon: '/public/icons/css3.svg',
                     name: "Css"
                 },
             ],
