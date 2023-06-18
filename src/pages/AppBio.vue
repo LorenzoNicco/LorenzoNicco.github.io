@@ -76,10 +76,10 @@
 
 <template>
     <main>
-        <h1 class="text-center my-section-padding">Questo sono io 👋</h1>
+        <h1 class="text-center my-bio-title-padding">Questo sono io 👋</h1>
 
-        <div class="d-flex justify-content-center align-items-center">
-            <div class="img-debug"></div>
+        <div class="img-container">
+            <img src="img/profilo2.png" alt="Immagine non trovata">
         </div>
 
         <section id="bio" class="container my-section-padding">
@@ -138,6 +138,19 @@
 <style lang="scss" scoped>
     h1 {
         margin-top: 104px;
+    }
+
+    .img-container {
+        width: 350px;
+        height: 350px;
+        margin: 0 auto;
+        margin-bottom: 7rem;
+
+        &>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     .img-debug {
