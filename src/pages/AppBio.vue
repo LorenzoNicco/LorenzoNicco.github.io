@@ -85,7 +85,7 @@
         <section id="bio" class="container my-section-padding">
             <div class="row justify-content-center">
 
-                <h2 class="col-12 text-center mt-5 mb-3">Chi sono</h2>
+                <h2 class="col-12 text-center mt-5 mb-3 my-orange-text">Chi sono</h2>
 
                 <p class="col-8 text-center">Da amante di costruzioni ed enigmi, costruisco pagine e risolvo problemi su Internet per passione e per lavoro. Come Web Developer dedico estrema attenzione ai dettagli e cerco continuamente di imparare nuovi linguaggi e strumenti.
                                             
@@ -144,5 +144,12 @@
         width: 200px;
         height: 200px;
         background-color: red;
+    }
+
+    #bio {
+        background-image: url('./bgs/sfondo3.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 </style>

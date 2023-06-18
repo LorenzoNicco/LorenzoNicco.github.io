@@ -29,7 +29,7 @@
 
 <style lang="scss" scoped>
     main {
-        background-image: url('./bgs/Sfondo1_ver2.png');
+        background-image: url('./bgs/sfondo1_ver3.png');
         background-size: contain;
         background-repeat: no-repeat;
     }

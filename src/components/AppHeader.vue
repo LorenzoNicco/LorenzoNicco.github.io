@@ -92,5 +92,13 @@
         z-index: 100;   
         background-color: rgba(255,255,255,0.4); 
         backdrop-filter: saturate(180%) blur(15px);
+
+        a{
+            transition: 0.2s ease-in;
+        }
+
+        a:hover {
+            color: orange;
+        }
     }
 </style>

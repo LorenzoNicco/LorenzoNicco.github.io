@@ -65,7 +65,7 @@
 <template>
     <section id="stack" class="container my-section-padding">
         <div class="row justify-content-center">
-            <h2 class="col-12 text-center mb-5">Le tecnologie che uso</h2>
+            <h2 class="col-12 text-center mb-5 my-orange-text">Le tecnologie che uso</h2>
 
             <div class="col-8">
                 <div class="row flex-wrap">
@@ -82,7 +82,7 @@
 
 <style lang="scss" scoped>
 #stack {
-    background-image: url('./bgs/sfondo2.png');
+    background-image: url('./bgs/sfondo2_ver2.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
