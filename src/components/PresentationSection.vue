@@ -10,7 +10,7 @@
             <div class="col-8">
                 <h2 class="mb-4">Hello World!</h2>
 
-                <p class="fs-5">Mi chiamo Lorenzo e sono un <strong>Junior Full Stack Web Developer</strong>.</p>
+                <p class="fs-5">Mi chiamo Lorenzo e sono un <strong class="my-orange-text">Junior Full Stack Web Developer</strong>.</p>
 
                 <hr>
 

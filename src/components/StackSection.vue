@@ -81,6 +81,12 @@
 </template>
 
 <style lang="scss" scoped>
+#stack {
+    background-image: url('./bgs/sfondo2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
     p {
         font-weight: bold;
         color: orange;
@@ -89,4 +95,5 @@
     img {
         height: 70px;
     }
+}
 </style>
