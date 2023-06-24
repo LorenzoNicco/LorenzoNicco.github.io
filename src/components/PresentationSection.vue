@@ -20,13 +20,31 @@
             </div>
 
             <div class="col-4 d-flex justify-content-center align-items-center">
-                <div class="img-debug"></div>
+                <div class="img-container">
+                    <img src="img/profilo1_b.jpg" alt="Immagine non trovata">
+                </div>
             </div>
         </div>
     </section>
 </template>
 
 <style lang="scss" scoped>
+    .img-container {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        margin-bottom: 7rem;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid white;
+
+        &>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
     .img-debug {
         width: 200px;
         height: 200px;
