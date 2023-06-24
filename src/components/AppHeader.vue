@@ -47,7 +47,7 @@
                         ita: "Contatti"
                     },
                 ],
-                menuProject: [,
+                menuProject: [
                     {
                         id: "tech",
                         eng: "Technologies",
@@ -91,6 +91,11 @@
                 <ul v-else-if="currentRouteName == '/bio'" class="col list-unstyled d-flex justify-content-between">
                     <li v-for="item in menuBio">
                         <a class="text-decoration-none" :href="'#'+item.id">{{ item.ita }}</a>
+                    </li>
+                </ul>
+                <ul v-else class="col list-unstyled d-flex justify-content-between">
+                    <li v-for="item in menuProject">
+                        <a class="text-decoration-none" @click.prevent :href="'#'+item.id">{{ item.ita }}</a>
                     </li>
                 </ul>
             </div>
