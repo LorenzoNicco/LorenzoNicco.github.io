@@ -1,6 +1,7 @@
 import {reactive} from "vue";
 
 export const store = reactive ({
+    language: 'ita',
     projects: [
         {
             slug: "deliveboo",

@@ -1,8 +1,10 @@
 <script>
+    import { store } from "../store.js"
     export default {
         name: "AppHeader",
         data() {
             return {
+                store,
                 menuHome: [
                     {
                         id: "presentation",
@@ -87,15 +89,45 @@
                     <li v-for="item in menuHome">
                         <a class="text-decoration-none" :href="'#'+item.id">{{ item.ita }}</a>
                     </li>
+                    <li v-if="store.language == 'ita'" @click="store.language = 'eng'">
+                        <div class="flag">
+                            <img src="/img/flag_ita.png" alt="">
+                        </div>
+                    </li>
+                    <li v-if="store.language == 'eng'" @click="store.language = 'ita'">
+                        <div class="flag">
+                            <img src="/img/flag_eng.png" alt="">
+                        </div>
+                    </li>
                 </ul>
                 <ul v-else-if="currentRouteName == '/bio'" class="col list-unstyled d-flex justify-content-between">
                     <li v-for="item in menuBio">
                         <a class="text-decoration-none" :href="'#'+item.id">{{ item.ita }}</a>
                     </li>
+                    <li v-if="store.language == 'ita'" @click="store.language = 'eng'">
+                        <div class="flag">
+                            <img src="/img/flag_ita.png" alt="">
+                        </div>
+                    </li>
+                    <li v-if="store.language == 'eng'" @click="store.language = 'ita'">
+                        <div class="flag">
+                            <img src="/img/flag_eng.png" alt="">
+                        </div>
+                    </li>
                 </ul>
                 <ul v-else class="col list-unstyled d-flex justify-content-between">
                     <li v-for="item in menuProject">
                         <a class="text-decoration-none" @click.prevent :href="'#'+item.id">{{ item.ita }}</a>
+                    </li>
+                    <li v-if="store.language == 'ita'" @click="store.language = 'eng'">
+                        <div class="flag">
+                            <img src="/img/flag_ita.png" alt="">
+                        </div>
+                    </li>
+                    <li v-if="store.language == 'eng'" @click="store.language = 'ita'">
+                        <div class="flag">
+                            <img src="/img/flag_eng.png" alt="">
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -121,6 +153,19 @@
 
         a:hover {
             color: orange;
+        }
+
+        .flag {
+            height: 28px;
+            width: 40px;
+            object-position: center;
+            overflow: hidden;
+
+            img {
+                height: 40px;
+                width: 40px;
+                transform: translateY(-6px);
+            }
         }
     }
 </style>

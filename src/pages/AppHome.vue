@@ -16,7 +16,7 @@
 </script>
 
 <template>
-    <main>
+    <main class="position-relative">
         <JumboSection />
     
         <PresentationSection />

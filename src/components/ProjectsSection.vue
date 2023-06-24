@@ -24,6 +24,8 @@ import { store } from "../store.js"
                             </div>
         
                             <div class="col-7 d-flex flex-column justify-content-center align-items-start">
+                                <h2 v-if="store.language == 'ita'">Italiano</h2>
+                                <h2 v-else-if="store.language == 'eng'">Inglese</h2>
                                 <h3>{{ item.title }}</h3>
         
                                 <p>{{ item.shortDescription }}</p>
