@@ -87,46 +87,49 @@
     
                 <ul v-if="currentRouteName == '/'" class="col list-unstyled d-flex justify-content-between">
                     <li v-for="item in menuHome">
-                        <a class="text-decoration-none" :href="'#'+item.id">{{ item.ita }}</a>
+                        <a v-if="store.language == 'ita'" class="text-decoration-none" :href="'#'+item.id">{{ item.ita }}</a>
+                        <a v-else-if="store.language == 'eng'" class="text-decoration-none" :href="'#'+item.id">{{ item.eng }}</a>
                     </li>
                     <li v-if="store.language == 'ita'" @click="store.language = 'eng'">
-                        <div class="flag">
-                            <img src="/img/flag_ita.png" alt="">
+                        <div class="flag btn border-none p-0">
+                            <img src="/img/flag_eng.png" alt="">
                         </div>
                     </li>
-                    <li v-if="store.language == 'eng'" @click="store.language = 'ita'">
-                        <div class="flag">
-                            <img src="/img/flag_eng.png" alt="">
+                    <li v-else-if="store.language == 'eng'" @click="store.language = 'ita'">
+                        <div class="flag btn border-none p-0">
+                            <img src="/img/flag_ita.png" alt="">
                         </div>
                     </li>
                 </ul>
                 <ul v-else-if="currentRouteName == '/bio'" class="col list-unstyled d-flex justify-content-between">
                     <li v-for="item in menuBio">
-                        <a class="text-decoration-none" :href="'#'+item.id">{{ item.ita }}</a>
+                        <a v-if="store.language == 'ita'" class="text-decoration-none" :href="'#'+item.id">{{ item.ita }}</a>
+                        <a v-else-if="store.language == 'eng'" class="text-decoration-none" :href="'#'+item.id">{{ item.eng }}</a>
                     </li>
                     <li v-if="store.language == 'ita'" @click="store.language = 'eng'">
-                        <div class="flag">
-                            <img src="/img/flag_ita.png" alt="">
+                        <div class="flag btn border-none p-0">
+                            <img src="/img/flag_eng.png" alt="">
                         </div>
                     </li>
-                    <li v-if="store.language == 'eng'" @click="store.language = 'ita'">
-                        <div class="flag">
-                            <img src="/img/flag_eng.png" alt="">
+                    <li v-else-if="store.language == 'eng'" @click="store.language = 'ita'">
+                        <div class="flag btn border-none p-0">
+                            <img src="/img/flag_ita.png" alt="">
                         </div>
                     </li>
                 </ul>
                 <ul v-else class="col list-unstyled d-flex justify-content-between">
                     <li v-for="item in menuProject">
-                        <a class="text-decoration-none" @click.prevent :href="'#'+item.id">{{ item.ita }}</a>
+                        <a v-if="store.language == 'ita'" class="text-decoration-none" :href="'#'+item.id">{{ item.ita }}</a>
+                        <a v-else-if="store.language == 'eng'" class="text-decoration-none" :href="'#'+item.id">{{ item.eng }}</a>
                     </li>
                     <li v-if="store.language == 'ita'" @click="store.language = 'eng'">
-                        <div class="flag">
-                            <img src="/img/flag_ita.png" alt="">
+                        <div class="flag btn border-none p-0">
+                            <img src="/img/flag_eng.png" alt="">
                         </div>
                     </li>
-                    <li v-if="store.language == 'eng'" @click="store.language = 'ita'">
-                        <div class="flag">
-                            <img src="/img/flag_eng.png" alt="">
+                    <li v-else-if="store.language == 'eng'" @click="store.language = 'ita'">
+                        <div class="flag btn border-none p-0">
+                            <img src="/img/flag_ita.png" alt="">
                         </div>
                     </li>
                 </ul>
@@ -157,7 +160,7 @@
 
         .flag {
             height: 28px;
-            width: 40px;
+            width: 42px;
             object-position: center;
             overflow: hidden;
 

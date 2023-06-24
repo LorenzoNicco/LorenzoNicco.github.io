@@ -17,6 +17,6 @@
 
 <style lang="scss" scoped>
     #jumbotron {
-        margin-top: 105px;
+        margin-top: 110px;
     }
 </style>
