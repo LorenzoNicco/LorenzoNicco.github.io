@@ -43,7 +43,7 @@
                     </div>
                 </div>
 
-                <div class="stack col-12 my-project-mb">
+                <div id="tech" class="stack col-12 my-project-mb">
                     <h2 class="text-center my-4">Linguaggi e Frameworks utilizzati</h2>
 
                     <div class="row flex-wrap justify-content-center">
@@ -55,7 +55,7 @@
                     </div>
                 </div>
 
-                <video class="col-12 w-75" :src="project.video" controls muted></video>
+                <video id="video" class="col-12 w-75" :src="project.video" controls muted></video>
             </div>
         </section>
 

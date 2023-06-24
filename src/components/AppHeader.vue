@@ -46,6 +46,23 @@
                         eng: "Contacts",
                         ita: "Contatti"
                     },
+                ],
+                menuProject: [,
+                    {
+                        id: "tech",
+                        eng: "Technologies",
+                        ita: "Strumenti"
+                    },
+                    {
+                        id: "video",
+                        eng: "Video",
+                        ita: "Video"
+                    },
+                    {
+                        id: "contacts",
+                        eng: "Contacts",
+                        ita: "Contatti"
+                    },
                 ]
             }
         },
