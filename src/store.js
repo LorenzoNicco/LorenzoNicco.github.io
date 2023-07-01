@@ -6,7 +6,8 @@ export const store = reactive ({
         {
             slug: "deliveboo",
             title: "Deliveboo",
-            shortDescription: "Web app per la consegna di cibo a domicilio",
+            shortDescription_ita: "Web app per la consegna di cibo a domicilio",
+            shortDescription_eng: "Web app for food delivery",
             pic: "./registrazioni/Deliveboo.JPG",
             video: "./registrazioni/Deliveboo.mp4",
             technologies: [
@@ -35,7 +36,8 @@ export const store = reactive ({
         {
             slug: "cinemato",
             title: "Cinemato",
-            shortDescription: "Home page per un'azienda di produzione video.",
+            shortDescription_ita: "Home page per un'azienda di produzione video.",
+            shortDescription_eng: "Home page for a video making company",
             pic: "./registrazioni/Cinemato.JPG",
             video: "./registrazioni/Cinemato.mkv",
             technologies: [
@@ -60,7 +62,8 @@ export const store = reactive ({
         {
             slug: "boolflix",
             title: "Boolflix",
-            shortDescription: "Ricerca di film e serie tv tramite chiamata Api.",
+            shortDescription_ita: "Ricerca di film e serie tv tramite chiamata Api.",
+            shortDescription_eng: "Movie and tv show research made with an Api call",
             pic: "./registrazioni/Boolflix.JPG",
             video: "./registrazioni/Boolflix.mp4",
             technologies: [
@@ -85,7 +88,8 @@ export const store = reactive ({
         {
             slug: "boolzapp",
             title: "BoolzApp",
-            shortDescription: "Replica di WhatsApp Web.",
+            shortDescription_ita: "Replica di WhatsApp Web.",
+            shortDescription_eng: "WhatsApp Web replica",
             pic: "./registrazioni/BoolzApp.JPG",
             video: "./registrazioni/BoolzApp.mp4",
             technologies: [
@@ -106,7 +110,8 @@ export const store = reactive ({
         {
             slug: "spotify-web",
             title: "Spotify Web",
-            shortDescription: "Replica dell'interfaccia della web app di Spotify",
+            shortDescription_ita: "Replica dell'interfaccia della web app di Spotify",
+            shortDescription_eng: "Web app interface inspired by Spotify",
             pic: "./registrazioni/SpotifyWeb-replica.JPG",
             video: "./registrazioni/SpotifyWeb-replica.mp4",
             technologies: [
