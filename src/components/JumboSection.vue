@@ -8,7 +8,7 @@
     <!-- Jumbotron --------------------------------------------------------------------------->
     <section id="jumbotron" class="container">
         <div class="row justify-content-center">
-            <h1 class="col-4 my-section-padding text-center my-orange-text">
+            <h1 class="col-4 my-section-padding text-center">
                 Costruisco cose per internet
             </h1>
         </div>

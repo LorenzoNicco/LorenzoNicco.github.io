@@ -82,7 +82,7 @@
         <nav class="container">
             <div class="row">
                 <div class="col-7 text-start">
-                    TEST
+                    <router-link  :to="{ name: 'home'}" class="btn border-none p-0">HOME</router-link>
                 </div>
     
                 <ul v-if="currentRouteName == '/'" class="col list-unstyled d-flex justify-content-between">
@@ -152,6 +152,7 @@
 
         a{
             transition: 0.2s ease-in;
+            color: cornflowerblue;
         }
 
         a:hover {
