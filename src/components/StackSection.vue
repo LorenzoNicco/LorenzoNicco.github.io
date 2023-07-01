@@ -1,8 +1,10 @@
 <script>
+    import { store } from "../store.js"
     export default {
         name: "StackSection",
         data() {
             return {
+                store,
                 stack: [
                     {
                         title: "Html",
@@ -65,7 +67,8 @@
 <template>
     <section id="stack" class="container my-section-padding">
         <div class="row justify-content-center">
-            <h2 class="col-12 text-center mb-5 my-orange-text">Le tecnologie che uso</h2>
+            <h2 v-if="store.language == 'ita'" class="col-12 text-center mb-5 my-orange-text">Le tecnologie che uso</h2>
+            <h2 v-else-if="store.language == 'eng'" class="col-12 text-center mb-5 my-orange-text">The technologies I use</h2>
 
             <div class="col-8">
                 <div class="row flex-wrap">
