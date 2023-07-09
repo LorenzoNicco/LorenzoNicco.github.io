@@ -1,4 +1,5 @@
 <script>
+    import { store } from "../store.js"
     import RoadmapSection from "../components/RoadmapSection.vue";
     export default {
         name: "AppBio",
@@ -7,6 +8,7 @@
         },
         data() {
             return {
+                store,
                 data: {
                     experiences: [
                         {
@@ -76,7 +78,8 @@
 
 <template>
     <main>
-        <h1 class="text-center my-bio-title-padding">Questo sono io 👋</h1>
+        <h1 v-if="store.language == 'ita'"  class="text-center my-bio-title-padding">Questo sono io 👋</h1>
+        <h1 v-if="store.language == 'eng'"  class="text-center my-bio-title-padding">This is me 👋</h1>
 
         <div class="img-container">
             <img src="img/profilo2.png" alt="Immagine non trovata">
@@ -85,9 +88,11 @@
         <section id="bio" class="container my-section-padding">
             <div class="row justify-content-center">
 
-                <h2 class="col-12 text-center mt-5 mb-3 my-orange-text">Chi sono</h2>
+                <h2 v-if="store.language == 'ita'" class="col-12 text-center mt-5 mb-3 my-orange-text">Chi sono</h2>
+                <h2 v-if="store.language == 'eng'" class="col-12 text-center mt-5 mb-3 my-orange-text">Who I am</h2>
 
-                <p class="col-8 text-center">Da amante di costruzioni ed enigmi, costruisco pagine e risolvo problemi su Internet per passione e per lavoro. Come Web Developer dedico estrema attenzione ai dettagli e cerco continuamente di imparare nuovi linguaggi e strumenti.
+                <p v-if="store.language == 'ita'" class="col-8 text-center">Ho scoperto il mondo della programmazione quasi per caso, rimanendone subito folgorato. Da quel momento ho vissuto a pane e codice con una passione talmente grande da prendere la decisione di cambiare vita, lasciando un posto di lavoro sicuro e investendo
+                                            tutto nel percorso di formazione che mi ha portato a coronare il mio sogno di lavorare in questo fantastico campo.
                                             
                                             <br><br>
 
@@ -95,8 +100,28 @@
                                             Inoltre, durante questo percorso, ho avuto l'opportunità di affinare le mie doti di analisi e risoluzione dei problemi e di apprendere i migliori metodi di svolgimento del lavoro di sviluppatore web.
 
                                             <br><br>
+
+                                            Attualmente sto lavorando come Front End Developer presso Promos Web 22, dove sto continuando a crescere come professionista, sviluppando progetti importanti e complessi.
+
+                                            <br><br>
                                             
                                             Non esitate a contattarmi per conoscerci meglio!
+                </p>
+                <p v-if="store.language == 'eng'" class="col-8 text-center">I discovered the world of programming almost by accident, immediately falling in love. From that moment I lived on bread and code with a passion so great to make the decision to change life,
+                                             leaving my job and investing all I had in the training path that led me to fulfill my dream of working in this fantastic field.
+                                            
+                                            <br><br>
+
+                                            During my 700-hour experience in Boolean, I gained the skills necessary for developing projects in both Front End and Back End, applying languages and frameworks such as Html, Css, Javascript, mysql, VueJs, Php, Laravel and many others.
+                                            In addition, during this process, I had the opportunity to develop my analytical and problem-solving skills and learn the best practices of the web developer job.
+
+                                            <br><br>
+
+                                            I am currently working as a Front End Developer at Promos Web 22, where I am continuing to grow as a professional, developing important and complex projects.
+
+                                            <br><br>
+                                            
+                                            Do not hesitate to contact me to get to know us better!
                 </p>
             </div>
         </section>
@@ -104,9 +129,11 @@
         <section id="experiences" class="container my-section-padding">
             <div class="row g-0">
                 <div class="col-12 mb-5">
-                    <h2 class="text-center mb-3">Le mie esperienze fin'ora</h2>
+                    <h2 v-if="store.language == 'ita'" class="text-center mb-3">Le mie esperienze fin'ora</h2>
+                    <h2 v-if="store.language == 'eng'" class="text-center mb-3">My experiences so far</h2>
     
-                    <p class="text-center w-75 m-auto">Queste sono le esperienze più significative che ho affrontato durante il mio percorso. Durante queste fasi della mia vita ho potuto sviluppare e affinare le abilità di cui dispongo, rimanendo all'interno di un contesto lavorativo o simile.</p>
+                    <p v-if="store.language == 'ita'" class="text-center w-75 m-auto">Queste sono le esperienze più significative che ho affrontato durante il mio percorso. Durante queste fasi della mia vita ho potuto sviluppare e affinare le abilità di cui dispongo, rimanendo all'interno di un contesto lavorativo o simile.</p>
+                    <p v-if="store.language == 'eng'" class="text-center w-75 m-auto">These are the most significant experiences I have faced during my journey. During these phases of my life I've been able to develop and refine my the skills, remaining within a working context or similar.</p>
                 </div>
 
                 <RoadmapSection
@@ -119,9 +146,11 @@
         <section id="education" class="container my-section-padding">
             <div class="row g-0">
                 <div class="col-12 mb-5">
-                    <h2 class="text-center mb-3">Dove ho studiato</h2>
+                    <h2 v-if="store.language == 'ita'" class="text-center mb-3">Dove ho studiato</h2>
+                    <h2 v-if="store.language == 'eng'" class="text-center mb-3">Where I studied</h2>
 
-                    <p class="text-center w-75 m-auto">I miei studi sono iniziati nel campo dell'arte, per poi spostarsi sempre di più verso l'area digitale ed informatica. Durante questi periodi ho appreso l'uso di vari strumenti e tecnologie che tutt'ora mi sono utili per il mio lavoro. Ma, soprattutto, ho potuto formare il mio modo di pensare in vari ambiti, facendo tesoro delle parti migliori di ognuno di essi.</p>
+                    <p v-if="store.language == 'ita'" class="text-center w-75 m-auto">I miei studi sono iniziati nel campo dell'arte, per poi spostarsi sempre di più verso l'area digitale ed informatica. Durante questi periodi ho appreso l'uso di vari strumenti e tecnologie che tutt'ora mi sono utili per il mio lavoro. Ma, soprattutto, ho potuto formare il mio modo di pensare in vari ambiti, facendo tesoro delle parti migliori di ognuno di essi.</p>
+                    <p v-if="store.language == 'eng'" class="text-center w-75 m-auto">My studies began in the field of art, and then moved more and more to the digital and computer science area. During these periods I learned the use of various tools and technologies that are still useful for my work. But, above all, I have been able to form my way of thinking in various areas, treasuring the best parts of each of them.</p>
                 </div>
         
                 <RoadmapSection
@@ -131,7 +160,8 @@
             </div>
         </section>
 
-        <router-link class="my-button m-auto mb-5" :to="{ name: 'home'}">Torna alla home</router-link>
+        <router-link v-if="store.language == 'ita'" class="my-button m-auto mb-5" :to="{ name: 'home'}">Torna alla home</router-link>
+        <router-link v-if="store.language == 'eng'" class="my-button m-auto mb-5" :to="{ name: 'home'}">Home page</router-link>
     </main>
 </template>
 

@@ -30,7 +30,8 @@ import { store } from "../store.js"
                                 <p v-if="store.language == 'ita'">{{ item.shortDescription_ita }}</p>
                                 <p v-else-if="store.language == 'eng'">{{ item.shortDescription_eng }}</p>
                                 
-                                <router-link :to="{ name: 'single-project', params: { slug: item.slug } }" class="my-button">Esplora</router-link>
+                                <router-link v-if="store.language == 'ita'" :to="{ name: 'single-project', params: { slug: item.slug } }" class="my-button">Esplora</router-link>
+                                <router-link v-if="store.language == 'eng'" :to="{ name: 'single-project', params: { slug: item.slug } }" class="my-button">Explore</router-link>
                             </div>
                         </div>
                     </div>
