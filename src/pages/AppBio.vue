@@ -41,33 +41,49 @@
                             id: 'Liceo-Petrocchi',
                             company: 'Liceo Artistico P. Petrocchi',
                             title: 'Diploma in Architettura e Arredamento',
+                            titleEng: 'Architecture and Interior Design High School Diploma',
                             location: 'Pistoia',
+                            locationEng: 'Pistoia',
                             duration: '2005 - 2011',
-                            description: 'Diploma di maturità ottenuta nell\'indirizzo di studi di Architettura e Arredamento' //correggere
+                            durationEng: '2005 - 2011',
+                            description: 'Diploma di maturità ottenuto per l\'indirizzo di studi di Architettura e Arredamento',
+                            descriptionEng: 'Diploma in Architecture and Interior Design.'
                         },
                         {
                             id: 'CG-Spectrum-certificate',
                             company: 'CG Spectrum - College of Digital Art and Animation',
                             title: 'Introduction to Concept Art & Illustration',
+                            titleEng: 'Introduction to Concept Art & Illustration',
                             location: 'Remoto',
-                            duration: 'Novembre 2022 - Maggio 2023', //correggere
-                            description: 'Percorso di studi intensivo di 700 ore, finalizzato all\'apprendimento degli strumenti necessari allo sviluppo di siti e applicazioni web.' //correggere
+                            locationEng: 'Remote',
+                            duration: 'Marzo 2019 - Settembre 2019',
+                            durationEng: 'March 2019 - September 2019',
+                            description: 'Corso di 6 mesi finanlizzato all\'apprendimento delle basi del disegno digitale con Photoshop per la creazione di Concept Arts.',
+                            descriptionEng:'6-month course finanlized on learning the basics of digital drawing with Photoshop for the creation of Concept Arts.'
                         },
                         {
                             id: 'CG-Spectrum-diploma',
                             company: 'CG Spectrum - College of Digital Art and Animation',
                             title: 'Advanced Concept Art',
+                            titleEng: 'Introduction to Concept Art & Illustration',
                             location: 'Remoto',
-                            duration: 'Novembre 2022 - Maggio 2023', //correggere
-                            description: 'Percorso di studi intensivo di 700 ore, finalizzato all\'apprendimento degli strumenti necessari allo sviluppo di siti e applicazioni web.' //correggere
+                            locationEng: 'Remote',
+                            duration: 'Ottobre 2019 - Agosto 2020',
+                            durationEng: 'October 2019 - August 2020',
+                            description: 'Percorso di 10 mesi rivolto allo sviluppo di tecniche e conoscenze approfondite per il campo della Concept Art.',
+                            descriptionEng:'10-month course for the development of techniques and in-depth knowledge for the field of Concept Art.'
                         },
                         {
                             id: 'Boolean-education',
                             company: 'Boolean',
                             title: 'Master in Web Development',
+                            titleEng: 'Master in Web Development',
                             location: 'Remoto',
+                            locationEng: 'Remote',
                             duration: 'Novembre 2022 - Maggio 2023',
-                            description: 'Percorso di studi intensivo di 700 ore, finalizzato all\'apprendimento degli strumenti necessari allo sviluppo di siti e applicazioni web.'
+                            durationEng: 'November 2022 - May 2023',
+                            description: 'Percorso di studi intensivo di 700 ore, finalizzato all\'apprendimento degli strumenti necessari allo sviluppo di siti e applicazioni web.',
+                            descriptionEng: 'Study path of 700 hours, aimed at learning the tools necessary for the development of websites and web applications.'
                         },
                     ]
                 }
