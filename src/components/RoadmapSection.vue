@@ -30,7 +30,8 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2 class="modal-title fs-3" id="exampleModalLabel">{{ data.title }}</h2>
+                        <h2 v-if="store.language == 'ita'" class="modal-title fs-3" id="exampleModalLabel">{{ data.title }}</h2>
+                        <h2 v-if="store.language == 'eng'" class="modal-title fs-3" id="exampleModalLabel">{{ data.titleEng }}</h2>
                     </div>
 
                     <ul class="modal-body list-unstyled ms-5 ps-1">
@@ -41,17 +42,20 @@
 
                         <li>
                             <span class="fa-li"><font-awesome-icon icon="fa-solid fa-map-location-dot" /></span>
-                            <p>{{ data.location }}</p>
+                            <p v-if="store.language == 'ita'">{{ data.location }}</p>
+                            <p v-if="store.language == 'eng'">{{ data.locationEng }}</p>
                         </li>
 
                         <li>
                             <span class="fa-li"><font-awesome-icon icon="fa-regular fa-hourglass-half" /></span>
-                            <p>{{ data.duration }}</p>
+                            <p v-if="store.language == 'ita'">{{ data.duration }}</p>
+                            <p v-if="store.language == 'eng'">{{ data.durationEng }}</p>
                         </li>
 
                         <li>
                             <span class="fa-li"><font-awesome-icon icon="fa-solid fa-circle-question" /></span>
-                            <p>{{ data.description }}</p>
+                            <p v-if="store.language == 'ita'">{{ data.description }}</p>
+                            <p v-if="store.language == 'eng'">{{ data.descriptionEng }}</p>
                         </li>
                     </ul>
 

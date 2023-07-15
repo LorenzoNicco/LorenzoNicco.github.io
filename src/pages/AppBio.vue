@@ -15,25 +15,37 @@
                             id: 'The-Focus',
                             company: 'The Focus',
                             title: '3D DMP Trainee',
-                            location: 'Remote',
+                            titleEng: '3D DMP Trainee',
+                            location: 'Remoto',
+                            locationEng: 'Remote',
                             duration: 'Settembre 2021 - Novembre 2021',
-                            description: 'Corso teorico/pratico di 2 mesi durante il quale ho realizzato vari progetti di matte painting in 2d e 3d. Per la realizzazione di questi ho sfruttato i programmi Photoshop, Maya e Nuke'
+                            durationEng: 'September 2021 - November 2021',
+                            description: 'Corso teorico/pratico di 2 mesi durante il quale ho realizzato vari progetti di matte painting in 2d e 3d. Per la realizzazione di questi ho sfruttato i programmi Photoshop, Maya e Nuke',
+                            descriptionEng: 'Theoretical/Practical 2 months long course, where I worked on various matte painting projects both in 2d and 3d. To make them I worked with Photoshop, Maya and Nuke.'
                         },
                         {
                             id: 'Boolean-experience',
                             company: 'Boolean',
                             title: 'Jr Full Stack Web Developer Trainee',
-                            location: 'Remote',
+                            titleEng: 'Jr Full Stack Web Developer Trainee',
+                            location: 'Remoto',
+                            locationEng: 'Remote',
                             duration: 'Novembre 2022 - Maggio 2023',
-                            description: 'Corso teorico/pratico della durata di 6 mesi, durante il quale mi sono cimentato nella realizzazione di progetti ispirati a siti e web app realmente esistenti (ad esempio: WatsApp web, Spotify e Dropbox). I progetti realizzati durante il corso presentavano una difficoltà sempre crescente e delle scadenze variabili.'
+                            durationEng: 'November 2022 - May 2023',
+                            description: 'Corso teorico/pratico della durata di 6 mesi, durante il quale mi sono cimentato nella realizzazione di progetti ispirati a siti e web app realmente esistenti (ad esempio: WatsApp web, Spotify e Dropbox). I progetti realizzati durante il corso presentavano una difficoltà sempre crescente e delle scadenze variabili.',
+                            descriptionEng: 'Practical theorical course of 6 months. I worked on multiple projects inspired by real web pages and web app (for example: WhatsApp web, Spotify and Dropbox). Developing these projects I faced several challenges and increased my skills and capabilities as developer.'
                         },
                         {
                             id: 'Promos-web-22',
                             company: 'Promos Web 22',
-                            title: 'Sviluppatore web',
+                            title: 'Sviluppatore software',
+                            titleEng: 'Software developer',
                             location: 'Pieve a Nievole (PT)',
+                            locationEng: 'Pieve a Nievole (PT)',
                             duration: 'Maggio 2023 - Presente',
-                            description: 'Sviluppo e manutenzione dei siti web e gestionali dei clienti.'
+                            durationEng: 'May 2023 - Today',
+                            description: 'Sviluppo e manutenzione di siti web e software gestionali.',
+                            descriptionEng: 'Development and maintenance of websites and softwares.'
                         },
                     ],
                     education: [
@@ -59,7 +71,7 @@
                             duration: 'Marzo 2019 - Settembre 2019',
                             durationEng: 'March 2019 - September 2019',
                             description: 'Corso di 6 mesi finanlizzato all\'apprendimento delle basi del disegno digitale con Photoshop per la creazione di Concept Arts.',
-                            descriptionEng:'6-month course finanlized on learning the basics of digital drawing with Photoshop for the creation of Concept Arts.'
+                            descriptionEng:'6-month course finalized on learning the basics of digital drawing with Photoshop for the creation of Concept Arts.'
                         },
                         {
                             id: 'CG-Spectrum-diploma',
