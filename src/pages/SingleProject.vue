@@ -32,19 +32,21 @@
                 <h1 class="col-12 text-center mb-5">{{ project.title }}</h1>
 
                 <div class="col-12 my-project-mb">
-                    <div class="row">
+                    <div class="row justify-content-between">
                         <div class="col-5">
                             <img :src="project.pic" alt="Immagine non trovata" class="w-100">
                         </div>
         
-                        <div class="col-7">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum necessitatibus amet incidunt excepturi deserunt in, doloribus ad quia quas, praesentium unde libero sunt. Deserunt laboriosam labore aperiam, esse eveniet accusamus!</p>
+                        <div class="col-6">
+                            <p v-if="store.language == 'ita'">{{ project.description }}</p>
+                            <p v-if="store.language == 'eng'">{{ project.descriptionEng }}</p>       
                         </div>
                     </div>
                 </div>
 
                 <div id="tech" class="top-scroll-margin stack col-12 my-project-mb">
-                    <h2 class="text-center my-4">Linguaggi e Frameworks utilizzati</h2>
+                    <h2 v-if="store.language == 'ita'" class="text-center my-4">Linguaggi e Frameworks utilizzati</h2>
+                    <h2 v-if="store.language == 'eng'" class="text-center my-4">Languages and frameworks</h2>
 
                     <div class="row flex-wrap justify-content-center">
                         <div v-for="item in project.technologies" class="col-2 text-center">
@@ -59,7 +61,8 @@
             </div>
         </section>
 
-        <router-link class="my-button m-auto mb-5" :to="{ name: 'home'}">Torna alla home</router-link>
+        <router-link v-if="store.language == 'ita'" class="my-button m-auto mb-5" :to="{ name: 'home'}">Torna alla home</router-link>
+        <router-link v-if="store.language == 'eng'" class="my-button m-auto mb-5" :to="{ name: 'home'}">Home page</router-link>
     </main>
 </template>
 
