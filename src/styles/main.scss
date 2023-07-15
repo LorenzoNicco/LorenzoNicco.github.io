@@ -39,6 +39,24 @@ section {
     background-color: transparent;
 }
 
+.my-button-home {
+    display: block;
+    color: cornflowerblue;
+    width: fit-content;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    border: 2px solid cornflowerblue;
+    background-color: transparent;
+    transition: 0.3s ease-in;
+}
+
+.my-button-home:hover {
+    border: 2px solid cornflowerblue;
+    color: white;
+    background-color: cornflowerblue;
+}
+
 .my-project-mb {
     margin-bottom: 7rem;
 }

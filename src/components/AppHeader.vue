@@ -82,7 +82,7 @@
         <nav class="container">
             <div class="row">
                 <div class="col-7 text-start">
-                    <router-link  :to="{ name: 'home'}" class="btn border-none p-0">HOME</router-link>
+                    <router-link  :to="{ name: 'home'}" class="my-button-home">HOME</router-link>
                 </div>
     
                 <ul v-if="currentRouteName == '/'" class="col list-unstyled d-flex justify-content-between">
@@ -150,12 +150,12 @@
         background-color: rgba(255,255,255,0.4); 
         backdrop-filter: saturate(180%) blur(15px);
 
-        a{
+        a:not(.my-button-home){
             transition: 0.2s ease-in;
             color: cornflowerblue;
         }
 
-        a:hover {
+        a:not(.my-button-home):hover {
             color: orange;
         }
 
