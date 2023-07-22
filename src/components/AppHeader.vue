@@ -81,15 +81,15 @@
     <header>
         <nav class="container">
             <div class="row">
-                <div class="col-7 text-start">
+                <div class="col-3 text-start">
                     <router-link  :to="{ name: 'home'}" class="my-button-home d-none d-md-block">HOME</router-link>
                     <router-link  :to="{ name: 'home'}" class="my-button-home d-md-none"><font-awesome-icon icon="fa-solid fa-house" /></router-link>
                 </div>
     
-                <ul v-if="currentRouteName == '/'" class="col list-unstyled d-flex justify-content-between">
+                <ul v-if="currentRouteName == '/'" class="col-9 list-unstyled d-flex justify-content-end">
                     <li v-for="item in menuHome">
-                        <a v-if="store.language == 'ita'" class="text-decoration-none" :href="'#'+item.id">{{ item.ita }}</a>
-                        <a v-else-if="store.language == 'eng'" class="text-decoration-none" :href="'#'+item.id">{{ item.eng }}</a>
+                        <a v-if="store.language == 'ita'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.ita }}</a>
+                        <a v-else-if="store.language == 'eng'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.eng }}</a>
                     </li>
                     <li v-if="store.language == 'ita'" @click="store.language = 'eng'">
                         <div class="flag btn border-none p-0">
@@ -102,10 +102,10 @@
                         </div>
                     </li>
                 </ul>
-                <ul v-else-if="currentRouteName == '/bio'" class="col list-unstyled d-flex justify-content-between">
+                <ul v-else-if="currentRouteName == '/bio'" class="col-9 list-unstyled d-flex justify-content-end">
                     <li v-for="item in menuBio">
-                        <a v-if="store.language == 'ita'" class="text-decoration-none" :href="'#'+item.id">{{ item.ita }}</a>
-                        <a v-else-if="store.language == 'eng'" class="text-decoration-none" :href="'#'+item.id">{{ item.eng }}</a>
+                        <a v-if="store.language == 'ita'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.ita }}</a>
+                        <a v-else-if="store.language == 'eng'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.eng }}</a>
                     </li>
                     <li v-if="store.language == 'ita'" @click="store.language = 'eng'">
                         <div class="flag btn border-none p-0">
@@ -118,10 +118,10 @@
                         </div>
                     </li>
                 </ul>
-                <ul v-else class="col list-unstyled d-flex justify-content-between">
+                <ul v-else class="col-9 list-unstyled d-flex justify-content-end">
                     <li v-for="item in menuProject">
-                        <a v-if="store.language == 'ita'" class="text-decoration-none" :href="'#'+item.id">{{ item.ita }}</a>
-                        <a v-else-if="store.language == 'eng'" class="text-decoration-none" :href="'#'+item.id">{{ item.eng }}</a>
+                        <a v-if="store.language == 'ita'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.ita }}</a>
+                        <a v-else-if="store.language == 'eng'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.eng }}</a>
                     </li>
                     <li v-if="store.language == 'ita'" @click="store.language = 'eng'">
                         <div class="flag btn border-none p-0">
