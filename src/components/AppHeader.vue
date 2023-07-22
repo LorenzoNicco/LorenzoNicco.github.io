@@ -82,7 +82,8 @@
         <nav class="container">
             <div class="row">
                 <div class="col-7 text-start">
-                    <router-link  :to="{ name: 'home'}" class="my-button-home">HOME</router-link>
+                    <router-link  :to="{ name: 'home'}" class="my-button-home d-none d-md-block">HOME</router-link>
+                    <router-link  :to="{ name: 'home'}" class="my-button-home d-md-none"><font-awesome-icon icon="fa-solid fa-house" /></router-link>
                 </div>
     
                 <ul v-if="currentRouteName == '/'" class="col list-unstyled d-flex justify-content-between">

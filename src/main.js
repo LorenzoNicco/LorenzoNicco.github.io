@@ -19,9 +19,10 @@ import { faBuilding } from '@fortawesome/free-solid-svg-icons';
 import { faMapLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faHourglassHalf } from '@fortawesome/free-regular-svg-icons';
 import { faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
 
 /* add icons to the library */
-library.add(faUserSecret, faGithub, faLinkedin, faEnvelope, faBuilding, faMapLocationDot, faHourglassHalf, faCircleQuestion);
+library.add(faUserSecret, faGithub, faLinkedin, faEnvelope, faBuilding, faMapLocationDot, faHourglassHalf, faCircleQuestion, faHouse);
 
 createApp(App).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app');
 
