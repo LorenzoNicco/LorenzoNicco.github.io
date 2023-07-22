@@ -13,22 +13,22 @@
 <template>
     <section id="presentation" class="container my-section-padding">
         <div class="row">
-            <div class="col-8">
-                <h2 class="mb-4">Hello World!</h2>
+            <div class="col-12 col-lg-8">
+                <h2 class="mb-4 text-center text-md-start">Hello World!</h2>
 
-                <p v-if="store.language == 'ita'" class="fs-5">Mi chiamo Lorenzo e sono un <strong class="my-orange-text">Junior Full Stack Web Developer</strong>.</p>
-                <p v-else-if="store.language == 'eng'" class="fs-5">My name is Lorenzo and I'm a <strong class="my-orange-text">Junior Full Stack Web Developer</strong>.</p>
+                <p v-if="store.language == 'ita'" class="fs-5 mb-4 text-center text-md-start">Mi chiamo Lorenzo e sono un <strong class="my-orange-text">Junior Full Stack Web Developer</strong>.</p>
+                <p v-else-if="store.language == 'eng'" class="fs-5 mb-4 text-center text-md-start">My name is Lorenzo and I'm a <strong class="my-orange-text">Junior Full Stack Web Developer</strong>.</p>
 
                 <hr>
 
-                <p v-if="store.language == 'ita'">Da amante di costruzioni ed enigmi, costruisco pagine e risolvo problemi su Internet per passione e per lavoro. Come Web Developer dedico estrema attenzione ai dettagli e cerco continuamente di imparare nuovi linguaggi e strumenti.</p>
-                <p v-else-if="store.language == 'eng'">I build web pages and solve problems for passion and for work. As Web Developer I put extreme attention to the details and I continuously try to learn new languages and tools.</p>   
+                <p v-if="store.language == 'ita'" class="mb-4 text-center text-md-start">Da amante di costruzioni ed enigmi, costruisco pagine e risolvo problemi su Internet per passione e per lavoro. Come Web Developer dedico estrema attenzione ai dettagli e cerco continuamente di imparare nuovi linguaggi e strumenti.</p>
+                <p v-else-if="store.language == 'eng'" class="mb-4 text-center text-md-start">I build web pages and solve problems for passion and for work. As Web Developer I put extreme attention to the details and I continuously try to learn new languages and tools.</p>   
                 
-                <router-link v-if="store.language == 'ita'" class="my-button" :to="{ name: 'bio'}">Scopri di più!</router-link>
-                <router-link v-else-if="store.language == 'eng'" class="my-button" :to="{ name: 'bio'}">Find more!</router-link>
+                <router-link v-if="store.language == 'ita'" class="my-button mx-auto mx-md-0" :to="{ name: 'bio'}">Scopri di più!</router-link>
+                <router-link v-else-if="store.language == 'eng'" class="my-button mx-auto mx-md-0" :to="{ name: 'bio'}">Find more!</router-link>
             </div>
 
-            <div class="col-4 d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center pt-5 pt-md-0">
                 <div class="img-container">
                     <img src="img/profilo1_b.jpg" alt="Immagine non trovata">
                 </div>

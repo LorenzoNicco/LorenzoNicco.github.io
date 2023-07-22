@@ -30,7 +30,15 @@
 <style lang="scss" scoped>
     main {
         background-image: url('./bgs/sfondo1_ver3.png');
-        background-size: contain;
+        background-size: 100%;
         background-repeat: no-repeat;
+    }
+
+    @media screen and (max-width: 768px) {
+        main {
+            background-image: url('./bgs/sfondo4.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
     }
 </style>
