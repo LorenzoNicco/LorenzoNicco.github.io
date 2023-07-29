@@ -12,7 +12,7 @@
 
 <template>
     <!-- Jumbotron --------------------------------------------------------------------------->
-    <section id="jumbotron" class="container">
+    <section id="jumbotron" class="container-fluid">
         <div class="row justify-content-center">
             <h1 v-if="store.language == 'ita'" class="col-4 my-section-padding text-center">
                 Costruisco cose per internet

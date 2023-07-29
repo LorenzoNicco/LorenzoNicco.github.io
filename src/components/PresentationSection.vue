@@ -11,7 +11,7 @@
 </script>
 
 <template>
-    <section id="presentation" class="container my-section-padding">
+    <section id="presentation" class="container-fluid my-section-padding">
         <div class="row">
             <div class="col-12 col-lg-8">
                 <h2 class="mb-4 text-center text-md-start">Hello World!</h2>
@@ -38,25 +38,28 @@
 </template>
 
 <style lang="scss" scoped>
-    .img-container {
-        width: 300px;
-        height: 300px;
-        margin: 0 auto;
-        margin-bottom: 7rem;
-        border-radius: 50%;
-        overflow: hidden;
-        border: 5px solid white;
-
-        &>img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+    #presentation {
+        background-color: white;
+        .img-container {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            margin-bottom: 7rem;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid white;
+    
+            &>img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
-    }
-
-    .img-debug {
-        width: 200px;
-        height: 200px;
-        background-color: red;
+    
+        .img-debug {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
     }
 </style>

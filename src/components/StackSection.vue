@@ -65,14 +65,14 @@
 </script>
 
 <template>
-    <section id="stack" class="container my-section-padding">
+    <section id="stack" class="container-fluid my-section-padding">
         <div class="row justify-content-center">
             <h2 v-if="store.language == 'ita'" class="col-12 text-center mb-5 my-orange-text">Le tecnologie che uso</h2>
             <h2 v-else-if="store.language == 'eng'" class="col-12 text-center mb-5 my-orange-text">The technologies I use</h2>
 
-            <div class="col-8">
-                <div class="row flex-wrap">
-                    <div v-for="item in stack" class="col-2 text-center mb-5">
+            <div class="col-12 col-lg-8">
+                <div class="row">
+                    <div v-for="item in stack" class="col-6 col-md-4 col-lg-2 text-center mb-5">
                         <p>{{ item.title }}</p>
 
                         <img :src="item.icon" alt="Immagine non disponibile">
@@ -85,10 +85,7 @@
 
 <style lang="scss" scoped>
 #stack {
-    background-image: url('./bgs/sfondo2_ver2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
+    background-color: #5f9ea0;
 
     p {
         font-weight: bold;
