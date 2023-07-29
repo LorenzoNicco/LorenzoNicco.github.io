@@ -49,21 +49,24 @@
     // }
 
     #separatore1{
-        height: 250px;
+        height: 300px;
         width: 100%;
         background-image: url('./bgs/bottom-blue-to-white.png');
         background-size: contain;
+        background-repeat: repeat-x;
     }
     #separatore2{
-        height: 250px;
+        height: 300px;
         width: 100%;
         background-image: url('./bgs/top-white-to-blue.png');
         background-size: contain;
+        background-repeat: repeat-x;
     }
     #separatore3{
-        height: 250px;
+        height: 300px;
         width: 100%;
         background-image: url('./bgs/bottom-blue-to-white.png');
         background-size: contain;
+        background-repeat: repeat-x;
     }
 </style>

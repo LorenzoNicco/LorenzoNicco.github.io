@@ -41,20 +41,20 @@ section {
 
 .my-button-home {
     display: block;
-    color: cornflowerblue;
+    color: white;
     width: fit-content;
     text-decoration: none;
     padding: 0.5rem 1.5rem;
     border-radius: 5px;
-    border: 2px solid cornflowerblue;
+    border: 2px solid white;
     background-color: transparent;
     transition: 0.3s ease-in;
 }
 
 .my-button-home:hover {
-    border: 2px solid cornflowerblue;
+    border: 2px solid orange;
     color: white;
-    background-color: cornflowerblue;
+    background-color: orange;
 }
 
 .my-project-mb {

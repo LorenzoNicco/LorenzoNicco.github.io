@@ -148,12 +148,13 @@
         right: 0;
         padding: 2rem 0;
         z-index: 100;   
-        background-color: rgba(255,255,255,0.4); 
+        background-color: #5f9ea0;
+        // background-color: rgba(255,255,255,0.4); 
         backdrop-filter: saturate(180%) blur(15px);
 
         a:not(.my-button-home){
             transition: 0.2s ease-in;
-            color: cornflowerblue;
+            color: white;
         }
 
         a:not(.my-button-home):hover {
