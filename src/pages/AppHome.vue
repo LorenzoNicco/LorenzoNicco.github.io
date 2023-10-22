@@ -18,16 +18,10 @@
 <template>
     <main class="position-relative">
         <!-- <JumboSection /> -->
-
-        <!-- <div id="separatore1"></div> -->
     
         <PresentationSection />
-
-        <!-- <div id="separatore2"></div> -->
     
         <StackSection />
-
-        <!-- <div id="separatore3"></div> -->
     
         <ProjectsSection />
     </main>
