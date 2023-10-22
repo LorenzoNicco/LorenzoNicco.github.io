@@ -19,16 +19,16 @@ import { store } from "../store.js"
 
                 <div class="row justify-content-center">
                     <div v-for="item in store.projects" class="project-external col-10 rounded-pill mb-3">
-                        <div class="project-container row rounded-pill py-3">
-                            <div class="col-5 text-center d-flex justify-content-center align-items-center">
+                        <div class="project-container row rounded-pill py-3 justify-content-center">
+                            <div class="d-none col-5 text-center d-md-flex justify-content-md-center align-items-center">
                                 <img :src="item.pic" alt="Image not found">
                             </div>
         
-                            <div class="col-7 d-flex flex-column justify-content-center align-items-start">
+                            <div class="col-7 d-flex flex-column justify-content-center align-items-center align-items-md-start">
                                 <h3>{{ item.title }}</h3>
         
-                                <p v-if="store.language == 'ita'">{{ item.shortDescription_ita }}</p>
-                                <p v-else-if="store.language == 'eng'">{{ item.shortDescription_eng }}</p>
+                                <p v-if="store.language == 'ita'" class="d-none d-sm-block">{{ item.shortDescription_ita }}</p>
+                                <p v-else-if="store.language == 'eng'" class="d-none d-sm-block">{{ item.shortDescription_eng }}</p>
                                 
                                 <router-link v-if="store.language == 'ita'" :to="{ name: 'single-project', params: { slug: item.slug } }" class="my-button">Esplora</router-link>
                                 <router-link v-if="store.language == 'eng'" :to="{ name: 'single-project', params: { slug: item.slug } }" class="my-button">Explore</router-link>
@@ -76,6 +76,12 @@ import { store } from "../store.js"
         .project-container:hover::before {
             height: 100%;
             width: 0;
+        }
+
+        @media screen and (max-width: 991px) {
+            .project-container::before {
+                display: none;
+            }
         }
     }
 </style>
