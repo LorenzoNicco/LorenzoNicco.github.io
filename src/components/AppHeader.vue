@@ -9,7 +9,7 @@
                     {
                         id: "presentation",
                         eng: "Presentation",
-                        ita: "Presentazione"
+                        ita: "Presentazione",
                     },
                     {
                         id: "stack",
@@ -86,54 +86,56 @@
                     <router-link  :to="{ name: 'home'}" class="my-button-home d-md-none"><font-awesome-icon icon="fa-solid fa-house" /></router-link>
                 </div>
     
-                <ul v-if="currentRouteName == '/'" class="col-9 list-unstyled d-flex justify-content-end">
-                    <li v-for="item in menuHome">
-                        <a v-if="store.language == 'ita'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.ita }}</a>
-                        <a v-else-if="store.language == 'eng'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.eng }}</a>
-                    </li>
-                    <li v-if="store.language == 'ita'" @click="store.language = 'eng'">
-                        <div class="flag btn border-none p-0">
-                            <img src="/img/flag_eng.png" alt="">
-                        </div>
-                    </li>
-                    <li v-else-if="store.language == 'eng'" @click="store.language = 'ita'">
-                        <div class="flag btn border-none p-0">
-                            <img src="/img/flag_ita.png" alt="">
-                        </div>
-                    </li>
-                </ul>
-                <ul v-else-if="currentRouteName == '/bio'" class="col-9 list-unstyled d-flex justify-content-end">
-                    <li v-for="item in menuBio">
-                        <a v-if="store.language == 'ita'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.ita }}</a>
-                        <a v-else-if="store.language == 'eng'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.eng }}</a>
-                    </li>
-                    <li v-if="store.language == 'ita'" @click="store.language = 'eng'">
-                        <div class="flag btn border-none p-0">
-                            <img src="/img/flag_eng.png" alt="">
-                        </div>
-                    </li>
-                    <li v-else-if="store.language == 'eng'" @click="store.language = 'ita'">
-                        <div class="flag btn border-none p-0">
-                            <img src="/img/flag_ita.png" alt="">
-                        </div>
-                    </li>
-                </ul>
-                <ul v-else class="col-9 list-unstyled d-flex justify-content-end">
-                    <li v-for="item in menuProject">
-                        <a v-if="store.language == 'ita'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.ita }}</a>
-                        <a v-else-if="store.language == 'eng'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.eng }}</a>
-                    </li>
-                    <li v-if="store.language == 'ita'" @click="store.language = 'eng'">
-                        <div class="flag btn border-none p-0">
-                            <img src="/img/flag_eng.png" alt="">
-                        </div>
-                    </li>
-                    <li v-else-if="store.language == 'eng'" @click="store.language = 'ita'">
-                        <div class="flag btn border-none p-0">
-                            <img src="/img/flag_ita.png" alt="">
-                        </div>
-                    </li>
-                </ul>
+                <div class="col-9">
+                    <ul v-if="currentRouteName == '/'" class="row list-unstyled justify-content-end">
+                        <li v-for="item in menuHome" class="col">
+                            <a v-if="store.language == 'ita'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.ita }}</a>
+                            <a v-else-if="store.language == 'eng'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.eng }}</a>
+                        </li>
+                        <li v-if="store.language == 'ita'" @click="store.language = 'eng'" class="col">
+                            <div class="flag btn border-none p-0">
+                                <img src="/img/flag_eng.png" alt="">
+                            </div>
+                        </li>
+                        <li v-else-if="store.language == 'eng'" @click="store.language = 'ita'" class="col">
+                            <div class="flag btn border-none p-0">
+                                <img src="/img/flag_ita.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul v-else-if="currentRouteName == '/bio'" class="row list-unstyled justify-content-end">
+                        <li v-for="item in menuBio" class="col">
+                            <a v-if="store.language == 'ita'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.ita }}</a>
+                            <a v-else-if="store.language == 'eng'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.eng }}</a>
+                        </li>
+                        <li v-if="store.language == 'ita'" @click="store.language = 'eng'" class="col">
+                            <div class="flag btn border-none p-0">
+                                <img src="/img/flag_eng.png" alt="">
+                            </div>
+                        </li>
+                        <li v-else-if="store.language == 'eng'" @click="store.language = 'ita'" class="col">
+                            <div class="flag btn border-none p-0">
+                                <img src="/img/flag_ita.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul v-else class="row list-unstyled justify-content-end">
+                        <li v-for="item in menuProject" class="col">
+                            <a v-if="store.language == 'ita'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.ita }}</a>
+                            <a v-else-if="store.language == 'eng'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.eng }}</a>
+                        </li>
+                        <li v-if="store.language == 'ita'" @click="store.language = 'eng'" class="col">
+                            <div class="flag btn border-none p-0">
+                                <img src="/img/flag_eng.png" alt="">
+                            </div>
+                        </li>
+                        <li v-else-if="store.language == 'eng'" @click="store.language = 'ita'" class="col">
+                            <div class="flag btn border-none p-0">
+                                <img src="/img/flag_ita.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
