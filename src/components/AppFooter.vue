@@ -17,18 +17,20 @@
                 <h4 v-if="store.language == 'ita'" class="col-12 text-center text-light">I miei contatti</h4>
                 <h4 v-else-if="store.language == 'eng'" class="col-12 text-center text-light">My contacts</h4>
 
-                <div class="col-4 offset-4 d-flex justify-content-between my-3">
-                    <font-awesome-icon class="social-icons" icon="fa-brands fa-github" />
-
-                    <font-awesome-icon class="social-icons" icon="fa-brands fa-linkedin" />
-
-                    <font-awesome-icon class="social-icons" icon="fa-solid fa-envelope" />
+                <div class="col-12 col-md-4 offset-md-4 my-3">
+                    <div class="row justify-content-between">
+                        <font-awesome-icon class="social-icons col" icon="fa-brands fa-github" />
+    
+                        <font-awesome-icon class="social-icons col" icon="fa-brands fa-linkedin" />
+    
+                        <font-awesome-icon class="social-icons col" icon="fa-solid fa-envelope" />
+                    </div>
                 </div>
 
                 <hr class="text-secondary">
 
-                <p v-if="store.language == 'ita'" class="text-light text-center">Contattami liberamente, non vedo l'ora di lavorare insieme su qualche nuovo progetto!</p>
-                <p v-else-if="store.language == 'eng'" class="text-light text-center">Feel free to contact me, I can't wait to work together on some new projects!</p>
+                <p v-if="store.language == 'ita'" class="text-light text-center col-12">Contattami liberamente, non vedo l'ora di lavorare insieme su qualche nuovo progetto!</p>
+                <p v-else-if="store.language == 'eng'" class="text-light text-center col-12">Feel free to contact me, I can't wait to work together on some new projects!</p>
             </div>
         </section>
     </footer>

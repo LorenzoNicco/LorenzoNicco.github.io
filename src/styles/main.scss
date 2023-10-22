@@ -68,3 +68,9 @@ section {
 p {
     font-weight: 600;
 }
+
+@media screen and (max-width: 575px) {
+    .my-section-padding {
+        padding: 0 5px;
+    }
+}
