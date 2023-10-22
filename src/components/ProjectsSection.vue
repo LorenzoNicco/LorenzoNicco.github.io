@@ -42,6 +42,7 @@ import { store } from "../store.js"
 </template>
 
 <style lang="scss" scoped>
+#projects {    
     img {
         width: 60%;
     }
@@ -84,4 +85,5 @@ import { store } from "../store.js"
             }
         }
     }
+}
 </style>

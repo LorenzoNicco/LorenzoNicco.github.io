@@ -19,15 +19,15 @@
     <main class="position-relative">
         <!-- <JumboSection /> -->
 
-        <div id="separatore1"></div>
+        <!-- <div id="separatore1"></div> -->
     
         <PresentationSection />
 
-        <div id="separatore2"></div>
+        <!-- <div id="separatore2"></div> -->
     
         <StackSection />
 
-        <div id="separatore3"></div>
+        <!-- <div id="separatore3"></div> -->
     
         <ProjectsSection />
     </main>
@@ -48,25 +48,25 @@
     //     }
     // }
 
-    #separatore1{
-        height: 300px;
-        width: 100%;
-        background-image: url('./bgs/bottom-blue-to-white.png');
-        background-size: contain;
-        background-repeat: repeat-x;
-    }
-    #separatore2{
-        height: 300px;
-        width: 100%;
-        background-image: url('./bgs/top-white-to-blue.png');
-        background-size: contain;
-        background-repeat: repeat-x;
-    }
-    #separatore3{
-        height: 300px;
-        width: 100%;
-        background-image: url('./bgs/bottom-blue-to-white.png');
-        background-size: contain;
-        background-repeat: repeat-x;
-    }
+    // #separatore1{
+    //     height: 300px;
+    //     width: 100%;
+    //     background-image: url('./bgs/bottom-blue-to-white.png');
+    //     background-size: contain;
+    //     background-repeat: repeat-x;
+    // }
+    // #separatore2{
+    //     height: 300px;
+    //     width: 100%;
+    //     background-image: url('./bgs/top-white-to-blue.png');
+    //     background-size: contain;
+    //     background-repeat: repeat-x;
+    // }
+    // #separatore3{
+    //     height: 300px;
+    //     width: 100%;
+    //     background-image: url('./bgs/bottom-blue-to-white.png');
+    //     background-size: contain;
+    //     background-repeat: repeat-x;
+    // }
 </style>

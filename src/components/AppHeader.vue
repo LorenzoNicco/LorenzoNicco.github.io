@@ -78,7 +78,7 @@
 
 <template>
     <!-- Header --------------------------------------------------------------------------->
-    <header>
+    <header class="shadow-sm">
         <nav class="container">
             <div class="row">
                 <div class="col-3 text-start">

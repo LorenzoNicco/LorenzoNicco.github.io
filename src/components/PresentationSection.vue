@@ -40,6 +40,7 @@
 <style lang="scss" scoped>
     #presentation {
         background-color: white;
+        padding-top: 200px;
         .img-container {
             width: 300px;
             height: 300px;
