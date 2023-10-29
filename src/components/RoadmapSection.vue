@@ -23,7 +23,8 @@
 
         <div class="time-dot"></div>
 
-        <p class="duration-period">{{ data.duration }}</p>
+        <p v-if="store.language == 'ita'" class="duration-period">{{ data.duration }}</p>
+        <p v-if="store.language == 'eng'" class="duration-period">{{ data.durationEng }}</p>
 
         <!-- Modal -->
         <div class="modal fade" :id="data.id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

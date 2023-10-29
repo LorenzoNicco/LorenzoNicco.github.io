@@ -148,7 +148,7 @@
         top: 0;
         left: 0;
         right: 0;
-        padding: 2rem 0;
+        padding: 1.5rem 0;
         z-index: 100;   
         background-color: #5f9ea0;
         // background-color: rgba(255,255,255,0.4); 

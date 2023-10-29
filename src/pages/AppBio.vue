@@ -44,8 +44,8 @@
                             locationEng: 'Pieve a Nievole (PT)',
                             duration: 'Maggio 2023 - Presente',
                             durationEng: 'May 2023 - Today',
-                            description: 'Sviluppo e manutenzione di siti web e software gestionali.',
-                            descriptionEng: 'Development and maintenance of websites and softwares.'
+                        description: 'Sviluppo e manutenzione di siti web con   Wordpress e software gestionali Erp (lato front end).',
+                            descriptionEng: 'Development and maintenance of websites in Wordpress and Erp softwares (front end).'
                         },
                     ],
                     education: [
@@ -113,7 +113,7 @@
             <img src="img/profilo2.png" alt="Immagine non trovata">
         </div>
 
-        <section id="bio" class="container my-section-padding">
+        <section id="bio" class="container-fluid my-section-padding">
             <div class="row justify-content-center">
 
                 <h2 v-if="store.language == 'ita'" class="col-12 text-center mt-5 mb-3 my-orange-text">Chi sono</h2>
@@ -157,8 +157,8 @@
         <section id="experiences" class="container my-section-padding">
             <div class="row g-0">
                 <div class="col-12 mb-5">
-                    <h2 v-if="store.language == 'ita'" class="text-center mb-3">Le mie esperienze fin'ora</h2>
-                    <h2 v-if="store.language == 'eng'" class="text-center mb-3">My experiences so far</h2>
+                    <h2 v-if="store.language == 'ita'" class="text-center mb-3 my-orange-text">Le mie esperienze fin'ora</h2>
+                    <h2 v-if="store.language == 'eng'" class="text-center mb-3 my-orange-text">My experiences so far</h2>
     
                     <p v-if="store.language == 'ita'" class="text-center w-75 m-auto">Queste sono le esperienze più significative che ho affrontato durante il mio percorso. Durante queste fasi della mia vita ho potuto sviluppare e affinare le abilità di cui dispongo, rimanendo all'interno di un contesto lavorativo o simile.</p>
                     <p v-if="store.language == 'eng'" class="text-center w-75 m-auto">These are the most significant experiences I have faced during my journey. During these phases of my life I've been able to develop and refine my the skills, remaining within a working context or similar.</p>
@@ -174,8 +174,8 @@
         <section id="education" class="container my-section-padding">
             <div class="row g-0">
                 <div class="col-12 mb-5">
-                    <h2 v-if="store.language == 'ita'" class="text-center mb-3">Dove ho studiato</h2>
-                    <h2 v-if="store.language == 'eng'" class="text-center mb-3">Where I studied</h2>
+                    <h2 v-if="store.language == 'ita'" class="text-center mb-3 my-orange-text">Dove ho studiato</h2>
+                    <h2 v-if="store.language == 'eng'" class="text-center mb-3 my-orange-text">Where I studied</h2>
 
                     <p v-if="store.language == 'ita'" class="text-center w-75 m-auto">I miei studi sono iniziati nel campo dell'arte, per poi spostarsi sempre di più verso l'area digitale ed informatica. Durante questi periodi ho appreso l'uso di vari strumenti e tecnologie che tutt'ora mi sono utili per il mio lavoro. Ma, soprattutto, ho potuto formare il mio modo di pensare in vari ambiti, facendo tesoro delle parti migliori di ognuno di essi.</p>
                     <p v-if="store.language == 'eng'" class="text-center w-75 m-auto">My studies began in the field of art, and then moved more and more to the digital and computer science area. During these periods I learned the use of various tools and technologies that are still useful for my work. But, above all, I have been able to form my way of thinking in various areas, treasuring the best parts of each of them.</p>
@@ -218,9 +218,6 @@
     }
 
     #bio {
-        background-image: url('./bgs/sfondo3.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background-color: #5f9ea0;
     }
 </style>
