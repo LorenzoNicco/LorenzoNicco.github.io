@@ -55,6 +55,10 @@
                         icon: "/icons/sass.svg"
                     },
                     {
+                        title: "Tailwind",
+                        icon: "/icons/tailwind.svg"
+                    },
+                    {
                         title: "Photoshop",
                         icon: "/icons/adobephotoshop.svg"
                     },
