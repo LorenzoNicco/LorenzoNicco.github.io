@@ -19,11 +19,17 @@
 
                 <div class="col-12 col-md-4 offset-md-4 my-3">
                     <div class="row justify-content-between">
-                        <font-awesome-icon class="social-icons col" icon="fa-brands fa-github" />
-    
-                        <font-awesome-icon class="social-icons col" icon="fa-brands fa-linkedin" />
-    
-                        <font-awesome-icon class="social-icons col" icon="fa-solid fa-envelope" />
+                        <a href="https://github.com/LorenzoNicco" class="col-4 text-center">                            
+                            <font-awesome-icon class="social-icons col" icon="fa-brands fa-github" />
+                        </a>
+
+                        <a href="http://www.linkedin.com/in/lorenzoniccolai" class="col-4 text-center">                            
+                            <font-awesome-icon class="social-icons col" icon="fa-brands fa-linkedin" />
+                        </a>
+
+                        <a href="mailto:lorenzoniccolai91@gmail.com" class="col-4 text-center">                            
+                            <font-awesome-icon class="social-icons col" icon="fa-solid fa-envelope" />
+                        </a>
                     </div>
                 </div>
 
