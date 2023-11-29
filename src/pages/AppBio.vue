@@ -164,11 +164,13 @@
                     <p v-if="store.language == 'eng'" class="text-center w-md-75 m-auto">These are the most significant experiences I have faced during my journey. During these phases of my life I've been able to develop and refine my the skills, remaining within a working context or similar.</p>
                 </div>
 
-                <div class="col-12 d-flex flex-column flex-lg-row">
-                    <RoadmapSection
-                     v-for="data in data.experiences"
-                     :data="data"
-                    />
+                <div class="col-12 container">
+                    <div class="row flex-column flex-lg-row">
+                        <RoadmapSection
+                         v-for="data in data.experiences"
+                         :data="data"
+                        />
+                    </div>
                 </div>
             </div>
         </section>
@@ -183,10 +185,14 @@
                     <p v-if="store.language == 'eng'" class="text-center w-md-75 m-auto">My studies began in the field of art, and then moved more and more to the digital and computer science area. During these periods I learned the use of various tools and technologies that are still useful for my work. But, above all, I have been able to form my way of thinking in various areas, treasuring the best parts of each of them.</p>
                 </div>
         
-                <RoadmapSection
-                v-for="data in data.education"
-                :data="data"
-                />
+                <div class="col-12 container">
+                    <div class="row flex-column flex-lg-row">
+                        <RoadmapSection
+                        v-for="data in data.education"
+                        :data="data"
+                        />
+                    </div>
+                </div>
             </div>
         </section>
 

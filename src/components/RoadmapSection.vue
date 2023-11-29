@@ -14,7 +14,7 @@
 </script>
 
 <template>
-    <div class="data-container mb-2 mb-lg-5 d-flex flex-column align-items-center justify-content-end">
+    <div class="data-container col p-0 mb-2 mb-lg-5 d-flex flex-column align-items-center justify-content-end">
         <h4 class="company-name" data-bs-toggle="modal" :data-bs-target="'#'+data.id">{{ data.company }}</h4>
 
         <div class="vertical-line"></div>
@@ -127,11 +127,11 @@
     }
 
     // Inizio timeline
-    .data-container:nth-child(2) > .horizontal-line {
+    .data-container:first-child > .horizontal-line {
         position: relative;
     }
     
-    .data-container:nth-child(2) > .horizontal-line::before {
+    .data-container:first-child > .horizontal-line::before {
         content: '';
         position: absolute;
         top: 0;
