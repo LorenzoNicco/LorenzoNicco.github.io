@@ -82,60 +82,68 @@
         <nav class="container">
             <div class="row">
                 <div class="col-3 text-start">
-                    <router-link  :to="{ name: 'home'}" class="my-button-home d-none d-md-block">HOME</router-link>
-                    <router-link  :to="{ name: 'home'}" class="my-button-home d-md-none"><font-awesome-icon icon="fa-solid fa-house" /></router-link>
+                    <router-link  :to="{ name: 'home'}" class="my-button-home d-none d-lg-block">HOME</router-link>
+                    <router-link  :to="{ name: 'home'}" class="my-button-home d-lg-none"><font-awesome-icon icon="fa-solid fa-house" /></router-link>
                 </div>
     
-                <div class="col-9">
-                    <ul v-if="currentRouteName == '/'" class="row list-unstyled justify-content-end">
-                        <li v-for="item in menuHome" class="col">
-                            <a v-if="store.language == 'ita'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.ita }}</a>
-                            <a v-else-if="store.language == 'eng'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.eng }}</a>
-                        </li>
-                        <li v-if="store.language == 'ita'" @click="store.language = 'eng'" class="col">
-                            <div class="flag btn border-none p-0">
-                                <img src="/img/flag_eng.png" alt="">
-                            </div>
-                        </li>
-                        <li v-else-if="store.language == 'eng'" @click="store.language = 'ita'" class="col">
-                            <div class="flag btn border-none p-0">
-                                <img src="/img/flag_ita.png" alt="">
-                            </div>
-                        </li>
-                    </ul>
-                    <ul v-else-if="currentRouteName == '/bio'" class="row list-unstyled justify-content-end">
-                        <li v-for="item in menuBio" class="col">
-                            <a v-if="store.language == 'ita'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.ita }}</a>
-                            <a v-else-if="store.language == 'eng'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.eng }}</a>
-                        </li>
-                        <li v-if="store.language == 'ita'" @click="store.language = 'eng'" class="col">
-                            <div class="flag btn border-none p-0">
-                                <img src="/img/flag_eng.png" alt="">
-                            </div>
-                        </li>
-                        <li v-else-if="store.language == 'eng'" @click="store.language = 'ita'" class="col">
-                            <div class="flag btn border-none p-0">
-                                <img src="/img/flag_ita.png" alt="">
-                            </div>
-                        </li>
-                    </ul>
-                    <ul v-else class="row list-unstyled justify-content-end">
-                        <li v-for="item in menuProject" class="col">
-                            <a v-if="store.language == 'ita'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.ita }}</a>
-                            <a v-else-if="store.language == 'eng'" class="text-decoration-none me-3" :href="'#'+item.id">{{ item.eng }}</a>
-                        </li>
-                        <li v-if="store.language == 'ita'" @click="store.language = 'eng'" class="col">
-                            <div class="flag btn border-none p-0">
-                                <img src="/img/flag_eng.png" alt="">
-                            </div>
-                        </li>
-                        <li v-else-if="store.language == 'eng'" @click="store.language = 'ita'" class="col">
-                            <div class="flag btn border-none p-0">
-                                <img src="/img/flag_ita.png" alt="">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <nav class="col-9 navbar navbar-expand-lg">
+                    <div class="container-fluid d-flex justify-content-end">
+                        <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarSupportedContent">
+                            <ul v-if="currentRouteName == '/'" class="row list-unstyled justify-content-end navbar-nav mt-2 mt-lg-0">
+                                <li v-for="item in menuHome" class="col nav-item text-end mb-2 m-lg-0 text-end">
+                                    <a v-if="store.language == 'ita'" class="text-decoration-none me-lg-3" :href="'#'+item.id">{{ item.ita }}</a>
+                                    <a v-else-if="store.language == 'eng'" class="text-decoration-none me-lg-3" :href="'#'+item.id">{{ item.eng }}</a>
+                                </li>
+                                <li v-if="store.language == 'ita'" @click="store.language = 'eng'" class="col nav-item text-end mb-2 m-lg-0">
+                                    <div class="flag btn border-none p-0">
+                                        <img src="/img/flag_eng.png" alt="">
+                                    </div>
+                                </li>
+                                <li v-else-if="store.language == 'eng'" @click="store.language = 'ita'" class="col nav-item text-end mb-2 m-lg-0">
+                                    <div class="flag btn border-none p-0">
+                                        <img src="/img/flag_ita.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul v-else-if="currentRouteName == '/bio'" class="row list-unstyled justify-content-end navbar-nav">
+                                <li v-for="item in menuBio" class="col nav-item text-end mb-2 mb-lg-0">
+                                    <a v-if="store.language == 'ita'" class="text-decoration-none me-lg-3" :href="'#'+item.id">{{ item.ita }}</a>
+                                    <a v-else-if="store.language == 'eng'" class="text-decoration-none me-lg-3" :href="'#'+item.id">{{ item.eng }}</a>
+                                </li>
+                                <li v-if="store.language == 'ita'" @click="store.language = 'eng'" class="col nav-item text-end mb-2 m-lg-0">
+                                    <div class="flag btn border-none p-0">
+                                        <img src="/img/flag_eng.png" alt="">
+                                    </div>
+                                </li>
+                                <li v-else-if="store.language == 'eng'" @click="store.language = 'ita'" class="col nav-item text-end mb-2 m-lg-0">
+                                    <div class="flag btn border-none p-0">
+                                        <img src="/img/flag_ita.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul v-else class="row list-unstyled justify-content-end navbar-nav">
+                                <li v-for="item in menuProject" class="col nav-item text-end mb-2 m-lg-0">
+                                    <a v-if="store.language == 'ita'" class="text-decoration-none me-lg-3" :href="'#'+item.id">{{ item.ita }}</a>
+                                    <a v-else-if="store.language == 'eng'" class="text-decoration-none me-lg-3" :href="'#'+item.id">{{ item.eng }}</a>
+                                </li>
+                                <li v-if="store.language == 'ita'" @click="store.language = 'eng'" class="col nav-item text-end mb-2 m-lg-0">
+                                    <div class="flag btn border-none p-0">
+                                        <img src="/img/flag_eng.png" alt="">
+                                    </div>
+                                </li>
+                                <li v-else-if="store.language == 'eng'" @click="store.language = 'ita'" class="col nav-item text-end mb-2 m-lg-0">
+                                    <div class="flag btn border-none p-0">
+                                        <img src="/img/flag_ita.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </nav>
     </header>
