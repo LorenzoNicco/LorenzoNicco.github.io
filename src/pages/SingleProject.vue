@@ -33,13 +33,13 @@
 
                 <div class="col-12 my-project-mb">
                     <div class="row justify-content-between">
-                        <div class="col-5">
+                        <div class="col-12 col-md-5 mb-5 mb-md-0">
                             <img :src="project.pic" alt="Immagine non trovata" class="w-100">
                         </div>
         
-                        <div class="col-6">
-                            <p v-if="store.language == 'ita'">{{ project.description }}</p>
-                            <p v-if="store.language == 'eng'">{{ project.descriptionEng }}</p>       
+                        <div class="col-12 col-md-6">
+                            <p class="text-center text-md-start" v-if="store.language == 'ita'">{{ project.description }}</p>
+                            <p class="text-center text-md-start" v-if="store.language == 'eng'">{{ project.descriptionEng }}</p>       
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                     <h2 v-if="store.language == 'eng'" class="text-center my-4">Languages and frameworks</h2>
 
                     <div class="row flex-wrap justify-content-center">
-                        <div v-for="item in project.technologies" class="col-2 text-center">
+                        <div v-for="item in project.technologies" class="col-6 col-md-2 text-center mb-3">
                             <p>{{ item.name }}</p>
 
                             <img :src="item.icon" alt="Immagine non disponibile">
@@ -57,7 +57,7 @@
                     </div>
                 </div>
 
-                <video id="video" class="top-scroll-margin col-12 w-75" :src="project.video" controls muted></video>
+                <video id="video" class="top-scroll-margin col-12 w-md-75" :src="project.video" controls muted></video>
             </div>
         </section>
 
