@@ -109,7 +109,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <ul v-else-if="currentRouteName == '/bio'" class="row list-unstyled justify-content-end navbar-nav">
+                            <ul v-else-if="currentRouteName == '/bio'" class="row list-unstyled justify-content-end w-100 navbar-nav">
                                 <li v-for="item in menuBio" class="col nav-item text-end mb-2 mb-lg-0">
                                     <a v-if="store.language == 'ita'" class="text-decoration-none me-lg-3" :href="'#'+item.id">{{ item.ita }}</a>
                                     <a v-else-if="store.language == 'eng'" class="text-decoration-none me-lg-3" :href="'#'+item.id">{{ item.eng }}</a>
