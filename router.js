@@ -20,6 +20,9 @@ const router = createRouter({
             name: 'single-project',
             component: SingleProject
             },
-    ]
+    ],
+    scrollBehavior (to, from, savedPosition) {
+        return { top: 0 }
+    }
 });
 export { router };
