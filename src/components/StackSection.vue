@@ -59,6 +59,10 @@
                         icon: "/icons/tailwind.svg"
                     },
                     {
+                        title: "Livewire",
+                        icon: "/icons/livewire.png"
+                    },
+                    {
                         title: "Photoshop",
                         icon: "/icons/adobephotoshop.svg"
                     },
