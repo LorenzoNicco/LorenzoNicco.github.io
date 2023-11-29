@@ -14,12 +14,12 @@
 </script>
 
 <template>
-    <div class="data-container col mb-5 d-flex flex-column align-items-center justify-content-end">
+    <div class="data-container mb-2 mb-lg-5 d-flex flex-column align-items-center justify-content-end">
         <h4 class="company-name" data-bs-toggle="modal" :data-bs-target="'#'+data.id">{{ data.company }}</h4>
 
         <div class="vertical-line"></div>
 
-        <div class="horizontal-line"></div>
+        <div class="horizontal-line d-none d-lg-block"></div>
 
         <div class="time-dot"></div>
 

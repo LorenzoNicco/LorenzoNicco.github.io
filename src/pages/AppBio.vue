@@ -114,12 +114,12 @@
         </div>
 
         <section id="bio" class="container-fluid my-section-padding">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center w-100">
 
-                <h2 v-if="store.language == 'ita'" class="col-12 text-center mt-5 mb-3 my-orange-text">Chi sono</h2>
-                <h2 v-if="store.language == 'eng'" class="col-12 text-center mt-5 mb-3 my-orange-text">Who I am</h2>
+                <h2 v-if="store.language == 'ita'" class="col-12 col-md-8 text-center mt-5 mb-3 my-orange-text">Chi sono</h2>
+                <h2 v-if="store.language == 'eng'" class="col-12 col-md-8 text-center mt-5 mb-3 my-orange-text">Who I am</h2>
 
-                <p v-if="store.language == 'ita'" class="col-8 text-center">Ho scoperto il mondo della programmazione quasi per caso, rimanendone subito folgorato. Da quel momento ho vissuto a pane e codice con una passione talmente grande da prendere la decisione di cambiare vita, lasciando un posto di lavoro sicuro e investendo
+                <p v-if="store.language == 'ita'" class="col-12 col-md-8 text-center">Ho scoperto il mondo della programmazione quasi per caso, rimanendone subito folgorato. Da quel momento ho vissuto a pane e codice con una passione talmente grande da prendere la decisione di cambiare vita, lasciando un posto di lavoro sicuro e investendo
                                             tutto nel percorso di formazione che mi ha portato a coronare il mio sogno di lavorare in questo fantastico campo.
                                             
                                             <br><br>
@@ -135,7 +135,7 @@
                                             
                                             Non esitate a contattarmi per conoscerci meglio!
                 </p>
-                <p v-if="store.language == 'eng'" class="col-8 text-center">I discovered the world of programming almost by accident, immediately falling in love. From that moment I lived on bread and code with a passion so great to make the decision to change life,
+                <p v-if="store.language == 'eng'" class="col-12 col-md-8 text-center">I discovered the world of programming almost by accident, immediately falling in love. From that moment I lived on bread and code with a passion so great to make the decision to change life,
                                              leaving my job and investing all I had in the training path that led me to fulfill my dream of working in this fantastic field.
                                             
                                             <br><br>
@@ -160,14 +160,16 @@
                     <h2 v-if="store.language == 'ita'" class="text-center mb-3 my-orange-text">Le mie esperienze fin'ora</h2>
                     <h2 v-if="store.language == 'eng'" class="text-center mb-3 my-orange-text">My experiences so far</h2>
     
-                    <p v-if="store.language == 'ita'" class="text-center w-75 m-auto">Queste sono le esperienze più significative che ho affrontato durante il mio percorso. Durante queste fasi della mia vita ho potuto sviluppare e affinare le abilità di cui dispongo, rimanendo all'interno di un contesto lavorativo o simile.</p>
-                    <p v-if="store.language == 'eng'" class="text-center w-75 m-auto">These are the most significant experiences I have faced during my journey. During these phases of my life I've been able to develop and refine my the skills, remaining within a working context or similar.</p>
+                    <p v-if="store.language == 'ita'" class="text-center w-md-75 m-auto">Queste sono le esperienze più significative che ho affrontato durante il mio percorso. Durante queste fasi della mia vita ho potuto sviluppare e affinare le abilità di cui dispongo, rimanendo all'interno di un contesto lavorativo o simile.</p>
+                    <p v-if="store.language == 'eng'" class="text-center w-md-75 m-auto">These are the most significant experiences I have faced during my journey. During these phases of my life I've been able to develop and refine my the skills, remaining within a working context or similar.</p>
                 </div>
 
-                <RoadmapSection
-                 v-for="data in data.experiences"
-                 :data="data"
-                />
+                <div class="col-12 d-flex flex-column flex-lg-row">
+                    <RoadmapSection
+                     v-for="data in data.experiences"
+                     :data="data"
+                    />
+                </div>
             </div>
         </section>
 
@@ -177,8 +179,8 @@
                     <h2 v-if="store.language == 'ita'" class="text-center mb-3 my-orange-text">Dove ho studiato</h2>
                     <h2 v-if="store.language == 'eng'" class="text-center mb-3 my-orange-text">Where I studied</h2>
 
-                    <p v-if="store.language == 'ita'" class="text-center w-75 m-auto">I miei studi sono iniziati nel campo dell'arte, per poi spostarsi sempre di più verso l'area digitale ed informatica. Durante questi periodi ho appreso l'uso di vari strumenti e tecnologie che tutt'ora mi sono utili per il mio lavoro. Ma, soprattutto, ho potuto formare il mio modo di pensare in vari ambiti, facendo tesoro delle parti migliori di ognuno di essi.</p>
-                    <p v-if="store.language == 'eng'" class="text-center w-75 m-auto">My studies began in the field of art, and then moved more and more to the digital and computer science area. During these periods I learned the use of various tools and technologies that are still useful for my work. But, above all, I have been able to form my way of thinking in various areas, treasuring the best parts of each of them.</p>
+                    <p v-if="store.language == 'ita'" class="text-center w-md-75 m-auto">I miei studi sono iniziati nel campo dell'arte, per poi spostarsi sempre di più verso l'area digitale ed informatica. Durante questi periodi ho appreso l'uso di vari strumenti e tecnologie che tutt'ora mi sono utili per il mio lavoro. Ma, soprattutto, ho potuto formare il mio modo di pensare in vari ambiti, facendo tesoro delle parti migliori di ognuno di essi.</p>
+                    <p v-if="store.language == 'eng'" class="text-center w-md-75 m-auto">My studies began in the field of art, and then moved more and more to the digital and computer science area. During these periods I learned the use of various tools and technologies that are still useful for my work. But, above all, I have been able to form my way of thinking in various areas, treasuring the best parts of each of them.</p>
                 </div>
         
                 <RoadmapSection
@@ -219,5 +221,11 @@
 
     #bio {
         background-color: #5f9ea0;
+    }
+
+    @media screen and (max-width: 350px) {
+        .img-container {
+            width: 100%;
+        }
     }
 </style>
