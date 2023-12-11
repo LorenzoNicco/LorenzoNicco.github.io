@@ -233,5 +233,6 @@
         .img-container {
             width: 100%;
         }
+        
     }
 </style>
