@@ -86,7 +86,7 @@
                     <router-link  :to="{ name: 'home'}" class="my-button-home d-lg-none"><font-awesome-icon icon="fa-solid fa-house" /></router-link>
                 </div>
     
-                <nav class="col-9 navbar navbar-expand-lg">
+                <nav class="col-9 navbar navbar-expand-lg py-0">
                     <div class="container-fluid d-flex justify-content-end">
                         <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
