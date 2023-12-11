@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import AppHome from './src/pages/AppHome.vue';
-import AppBio from './src/pages/AppBio.vue';
+import appBio from './src/pages/appBio.vue';
 import SingleProject from './src/pages/SingleProject.vue';
 const router = createRouter({
     history: createWebHistory(),
@@ -13,7 +13,7 @@ const router = createRouter({
         {
             path: '/bio',
             name: 'bio',
-            component: AppBio
+            component: appBio
         },
         {
             path: '/:slug',

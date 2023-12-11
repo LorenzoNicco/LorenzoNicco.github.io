@@ -2,7 +2,7 @@
     import { store } from "../store.js"
     import RoadmapSection from "../components/RoadmapSection.vue";
     export default {
-        name: "AppBio",
+        name: "appBio",
         components: {
             RoadmapSection
         },
