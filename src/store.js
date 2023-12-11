@@ -74,23 +74,23 @@ export const store = reactive ({
             video: "./registrazioni/todolist.mp4",
             technologies: [
                 {
-                    icon: '/html5.svg',
+                    icon: './icons/html5.svg',
                     name: "Html"
                 },
                 {
-                    icon: '/public/icons/tailwind.svg',
+                    icon: './icons/tailwind.svg',
                     name: "Tailwind"
                 },
                 {
-                    icon: '/public/icons/javascript.svg',
+                    icon: './icons/javascript.svg',
                     name: "Javascript"
                 },
                 {
-                    icon: '/public/icons/php.svg',
+                    icon: './icons/php.svg',
                     name: "Php"
                 },
                 {
-                    icon: '/public/icons/mysql.svg',
+                    icon: './icons/mysql.svg',
                     name: "MySql"
                 },
             ]
