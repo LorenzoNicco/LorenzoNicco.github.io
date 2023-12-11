@@ -74,7 +74,7 @@ export const store = reactive ({
             video: "./registrazioni/todolist.mp4",
             technologies: [
                 {
-                    icon: '/public/icons/html5.svg',
+                    icon: '/html5.svg',
                     name: "Html"
                 },
                 {
