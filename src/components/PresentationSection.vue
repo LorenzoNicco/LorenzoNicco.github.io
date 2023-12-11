@@ -30,7 +30,7 @@
 
             <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center pt-5 pt-md-0">
                 <div class="img-container">
-                    <img src="img/profilo1_b.jpg" alt="Immagine non trovata">
+                    <img src="/img/profilo1_b.jpg" alt="Immagine non trovata">
                 </div>
             </div>
         </div>
