@@ -35,31 +35,63 @@ export const store = reactive ({
                 },
             ]
         },
+        // {
+        //     slug: "cinemato",
+        //     title: "Cinemato",
+        //     shortDescription_ita: "Home page per un'azienda di produzione video.",
+        //     shortDescription_eng: "Home page for a video making company",
+        //     description: 'Questo è uno dei progetti realizzati durante la mia esperienza in Boolean, dove ho costruito una pagina web per un\'azienda di produzione cinematografica. Per realizzarlo ho usato VueJs e Sass.',
+        //     descriptionEng: 'This is one of the projects I did during my time in Boolean, where I built a web page for a film production company. I used VueJs and Sass to make it.',
+        //     pic: "./registrazioni/Cinemato.JPG",
+        //     video: "./registrazioni/Cinemato.mkv",
+        //     technologies: [
+        //         {
+        //             icon: '/public/icons/vuedotjs.svg',
+        //             name: "VueJs"
+        //         },
+        //         {
+        //             icon: '/public/icons/nodedotjs.svg',
+        //             name: "NodeJs"
+        //         },
+        //         {
+        //             icon: '/public/icons/vite.svg',
+        //             name: "Vite"
+        //         },
+        //         {
+        //             icon: '/public/icons/sass.svg',
+        //             name: "Sass"
+        //         },
+        //     ]
+        // },
         {
-            slug: "cinemato",
-            title: "Cinemato",
-            shortDescription_ita: "Home page per un'azienda di produzione video.",
-            shortDescription_eng: "Home page for a video making company",
-            description: 'Questo è uno dei progetti realizzati durante la mia esperienza in Boolean, dove ho costruito una pagina web per un\'azienda di produzione cinematografica. Per realizzarlo ho usato VueJs e Sass.',
-            descriptionEng: 'This is one of the projects I did during my time in Boolean, where I built a web page for a film production company. I used VueJs and Sass to make it.',
-            pic: "./registrazioni/Cinemato.JPG",
-            video: "./registrazioni/Cinemato.mkv",
+            slug: "todolist",
+            title: "TODO list",
+            shortDescription_ita: "Todo list realizzata in Php.",
+            shortDescription_eng: "Todo list made in Php",
+            description: 'Questa applicazione ci permette di creare una lista di task, inserendoli all\'interno di un database. Le operazioni di connessione e CRUD sono gestite in Php tramite MySql, mentre i dati vengono inviati alla parte front-end tramite dei fetch eseguiti in Javascript, in modo che l\'interfaccia venga aggiornata dinamicamente. I task possono essere modificati: cliccando sul pulsante corrispondente al task bersaglio, quest\'ultimo comparirà all\'interno dell\'input principale dove potremmo modificarlo. I pulsanti di invio cambieranno in modo da poter confermare la nostra modifica o annullare l\'operazione. L\'eliminazione dei task può essere effettuata singolarmente o in maniera totale.',
+            descriptionEng: 'This app allows us to create a list of tasks, adding them into a database. The connection and CRUD operations are managed in Php via MySql, while the data is sent to the front end via data fetch in Javascript. In this way the UI is updated dynamically. Tasks can be modified: by clicking on the button corresponding to the target task, this task will appear in the main input where we could modify it. The submit buttons will change so we can confirm our change or cancel the operation. Task deletion can be performed individually or for the whole list.',
+            pic: "./registrazioni/todolist.JPG",
+            video: "./registrazioni/todolist.mp4",
             technologies: [
                 {
-                    icon: '/public/icons/vuedotjs.svg',
-                    name: "VueJs"
+                    icon: '/public/icons/html5.svg',
+                    name: "Html"
                 },
                 {
-                    icon: '/public/icons/nodedotjs.svg',
-                    name: "NodeJs"
+                    icon: '/public/icons/tailwind.svg',
+                    name: "Tailwind"
                 },
                 {
-                    icon: '/public/icons/vite.svg',
-                    name: "Vite"
+                    icon: '/public/icons/javascript.svg',
+                    name: "Javascript"
                 },
                 {
-                    icon: '/public/icons/sass.svg',
-                    name: "Sass"
+                    icon: '/public/icons/php.svg',
+                    name: "Php"
+                },
+                {
+                    icon: '/public/icons/mysql.svg',
+                    name: "MySql"
                 },
             ]
         },
