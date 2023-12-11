@@ -110,7 +110,7 @@
         <h1 v-if="store.language == 'eng'"  class="text-center my-bio-title-padding">This is me 👋</h1>
 
         <div class="img-container">
-            <img src="img/profilo2.png" alt="Immagine non trovata">
+            <img src="/img/profilo2.png" alt="Immagine non trovata">
         </div>
 
         <section id="bio" class="container-fluid my-section-padding">
