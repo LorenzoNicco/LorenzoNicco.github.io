@@ -129,7 +129,7 @@
 
                                             <br><br>
 
-                                            Attualmente sto lavorando come Front End Developer presso Promos Web 22, dove sto continuando a crescere come professionista, sviluppando progetti importanti e complessi.
+                                            La mia prima esperienza lavorativa nel settore è stata come Front End Developer presso Promos srl, all'ufficio Promos Web 22, dove ho potuto continuare a crescere come professionista, sviluppando progetti importanti e complessi come software ERP e siti web in Wordpress.
 
                                             <br><br>
                                             
@@ -145,7 +145,7 @@
 
                                             <br><br>
 
-                                            I am currently working as a Front End Developer at Promos Web 22, where I am continuing to grow as a professional, developing important and complex projects.
+                                            My first work experience in the field was as a Front End Developer at Promos srl, at Promos Web 22 office, where I kept growing as a professional, developing important and complex projects, like ERP softwares and web sites made in Wordpress.
 
                                             <br><br>
                                             
