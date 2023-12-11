@@ -36,7 +36,7 @@
                             descriptionEng: 'Practical theorical course of 6 months. I worked on multiple projects inspired by real web pages and web app (for example: WhatsApp web, Spotify and Dropbox). Developing these projects I faced several challenges and increased my skills and capabilities as developer.'
                         },
                         {
-                            id: 'Promos srl - Promos-web-22',
+                            id: 'Promos-srl-Promos-web-22',
                             company: 'Promos srl - Promos Web 22',
                             title: 'Sviluppatore software',
                             titleEng: 'Software developer',
