@@ -92,7 +92,7 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         
-                        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarSupportedContent">
+                        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end pt-2" id="navbarSupportedContent">
                             <ul v-if="currentRouteName == '/'" class="row list-unstyled justify-content-end navbar-nav mt-2 mt-lg-0">
                                 <li v-for="item in menuHome" class="col nav-item text-end mb-2 m-lg-0 text-end">
                                     <a v-if="store.language == 'ita'" class="text-decoration-none me-lg-3" :href="'#'+item.id">{{ item.ita }}</a>
