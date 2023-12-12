@@ -44,8 +44,8 @@
                             locationEng: 'Pieve a Nievole (PT)',
                             duration: 'Maggio 2023 - Novembre 2023',
                             durationEng: 'May 2023 - November 2023',
-                        description: 'Sviluppo e manutenzione di siti web con   Wordpress e software gestionali Erp (lato front end).',
-                            descriptionEng: 'Development and maintenance of websites in Wordpress and Erp softwares (front end).'
+                            description: 'Sviluppo della parte front end di software gestionali erp, usando strumenti come Twig, Bootstrap, Tailwind, Javascript, Laravel, Livewire, Php e Alpine. Sviluppo e manutenzione di siti web con Wordpress.',
+                            descriptionEng: 'Front end development of erp softwares with Twig, Bootstrap, Tailwind, Javascript, Laravel, Livewire, Php and Alpine. Development and maintenance of websites in Wordpress.'
                         },
                     ],
                     education: [
