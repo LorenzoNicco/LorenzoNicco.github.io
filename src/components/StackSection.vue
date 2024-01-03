@@ -66,6 +66,10 @@
                         title: "Photoshop",
                         icon: "/icons/adobephotoshop.svg"
                     },
+                    {
+                        title: "Docker",
+                        icon: "/icons/docker.svg"
+                    },
                 ]
             }
         }
