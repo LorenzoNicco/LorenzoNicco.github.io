@@ -70,6 +70,10 @@
                         title: "Docker",
                         icon: "/icons/docker.svg"
                     },
+                    {
+                        title: "Jquery",
+                        icon: "/icons/jquery.svg"
+                    },
                 ]
             }
         }
