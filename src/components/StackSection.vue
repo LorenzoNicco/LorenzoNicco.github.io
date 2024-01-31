@@ -74,6 +74,10 @@
                         title: "Jquery",
                         icon: "/icons/jquery.svg"
                     },
+                    {
+                        title: "C#",
+                        icon: "/icons/csharp.svg"
+                    },
                 ]
             }
         }
